@@ -16,7 +16,12 @@
         "home/_news.scss",
         "home/_contact.scss",
         "_newspage.scss",
-        "newspage/_news.scss"
+        "newspage/_top_news.scss",
+        "newspage/_allnews.scss",
+        "_servicepage.scss",
+        "_workspacepage.scss",
+        "_aboutpage.scss",
+        "_contactpage.scss"
     ],
     "names": [],
     "file": "style.css"
