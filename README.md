@@ -1,4 +1,4 @@
 # lagoon-website
 そけん 　いくや
 hidenori tokuda
-mako kamiya
+かみや　まこ
