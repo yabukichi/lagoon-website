@@ -104,7 +104,129 @@ main {
   margin: auto 120px;
 }
 
-.homepage .services {
-  width: 100%;
+.homepage .services .services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.homepage .services .services-container .services-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.homepage .services .services-container .services-title h2 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  margin-right: 0;
+  position: absolute;
+  top: 0;
+  left: 25px;
+}
+
+.homepage .services .services-container .services-title p {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  margin-right: 0;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  color: #6DC0EA;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.homepage .services .container .service-contents {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.homepage .services .container .service-contents p {
+  font-size: 14px;
+}
+
+.homepage .services .container .service-contents .service-box1,
+.homepage .services .container .service-contents .service-box2,
+.homepage .services .container .service-contents .service-box3 {
+  border: 1px solid #f5f5f5;
+  background: white;
+  min-height: 400px;
+  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+          box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.homepage .services .container .service-contents .service-box1 h3,
+.homepage .services .container .service-contents .service-box2 h3,
+.homepage .services .container .service-contents .service-box3 h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.homepage .services .container .service-contents .service-box1:hover,
+.homepage .services .container .service-contents .service-box2:hover,
+.homepage .services .container .service-contents .service-box3:hover {
+  -webkit-box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.homepage .services .container .service-contents .service-box1:hover div .hover-change,
+.homepage .services .container .service-contents .service-box2:hover div .hover-change,
+.homepage .services .container .service-contents .service-box3:hover div .hover-change {
+  color: #6DC0EA;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.homepage .services .service-content-img .fa-comments,
+.homepage .services .service-content-img .fa-print,
+.homepage .services .service-content-img .fa-laptop-code {
+  font-size: 80px;
+  color: #6DC0EA;
+}
+
+@media screen and (max-width: 769px) {
+  .homepage .services .services-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homepage .services .services-container .services-title > p {
+    -webkit-transform: inherit;
+            transform: inherit;
+  }
+  .homepage .services .services-container .services-title {
+    position: inherit;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+  .homepage .services .services-container .services-title > h2 {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    position: inherit;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+  }
+  .homepage .services .services-container .services-title > p {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    position: inherit;
+  }
 }
 /*# sourceMappingURL=style.css.map */
