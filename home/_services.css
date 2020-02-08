@@ -14,7 +14,8 @@
   margin-right: 0;
   position: absolute;
   top: 0;
-  left: 25px;
+  left: 30px;
+  font-size: 32px;
 }
 
 .services .services-container .services-title p {
