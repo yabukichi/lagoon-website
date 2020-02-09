@@ -131,6 +131,38 @@ header .nav-info-button {
   padding: 0 1.5em;
 }
 
+footer {
+  line-height: 2;
+  background-color: grey;
+  height: 500px;
+}
+
+footer p {
+  padding: 0px;
+  margin: 0px;
+}
+
+footer .footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 150px 150px;
+}
+
+footer .footer-wrapper .footer-left-wrapper .footer-logo {
+  width: 100px;
+  height: auto;
+  padding-bottom: 30px;
+}
+
+footer .footer-wrapper .footer-left-wrapper .footer-info {
+  font-size: 13px;
+  color: #ffffff;
+}
+
 main {
   margin: auto 120px;
 }

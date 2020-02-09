@@ -1,3 +1,26 @@
 footer{
+    line-height: 2;
+    p{
+        padding: 0px;
+        margin: 0px;
+    }
     // タスク９
+    background-color: grey;
+    height: 500px;
+    .footer-wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding: 150px 150px;
+        .footer-left-wrapper{
+            .footer-logo{
+                width: 100px;
+                height: auto;
+                padding-bottom: 30px;
+            }
+            .footer-info{
+                font-size: 13px;
+                color: #ffffff;
+            }
+        }
+    }
 }
