@@ -1,4 +1,108 @@
-.services{
-    // タスク４
-    width: 100%;
+.services {
+    .services-container {
+        display: flex;
+        margin-top: 48px;
+        margin-bottom: 48px;
+
+        .services-title {
+            display: flex;
+            position: relative;
+
+            h2 {
+                writing-mode: vertical-rl;
+                margin-right: 0;
+                position: absolute;
+                top: 0;
+                left: 30px;
+                font-size: 32px;
+            }
+
+            p {
+                writing-mode: vertical-rl;
+                margin-right: 0;
+                position: absolute;
+                top: 0px;
+                left: 10px;
+                color: #6DC0EA;
+                transform: rotate(-180deg);
+
+            }
+        }
+    }
+
+    .container {
+        .service-contents {
+            justify-content: flex-end;
+
+            p {
+                font-size: 14px;
+            }
+
+            .service-box1,
+            .service-box2,
+            .service-box3 {
+                border: 1px solid #f5f5f5;
+                background: white;
+                min-height: 400px;
+                box-shadow: 0 0 3px 0 rgba(0, 0, 0, .12), 0 2px 3px 0 rgba(0, 0, 0, .22);
+                transition: .3s;
+
+                h3 {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+            }
+
+            .service-box1:hover,
+            .service-box2:hover,
+            .service-box3:hover {
+                box-shadow: 0 15px 30px -5px rgba(0, 0, 0, .15), 0 0 5px rgba(0, 0, 0, .1);
+                transform: translateY(-4px);
+
+                div {
+                    .hover-change {
+                        color: #6DC0EA;
+                        transition: .4s;
+
+                    }
+                }
+            }
+
+        }
+    }
+
+    .service-content-img .fa-comments,
+    .service-content-img .fa-print,
+    .service-content-img .fa-laptop-code {
+        font-size: 80px;
+        color: #6DC0EA;
+    }
+
+    @media screen and (max-width:769px) {
+        .services-container {
+            flex-direction: column;
+        }
+
+        .services-container .services-title>p {
+            transform: inherit;
+        }
+
+        .services-container .services-title {
+            position: inherit;
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+
+        .services-container .services-title>h2 {
+            writing-mode: horizontal-tb;
+            position: inherit;
+            font-weight: bold;
+            letter-spacing: 0.3rem;
+        }
+
+        .services-container .services-title>p {
+            writing-mode: horizontal-tb;
+            position: inherit;
+        }
+    }
 }
