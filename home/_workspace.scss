@@ -34,9 +34,11 @@ $accent-color: #2ca6e0;
 
 section.workspace{
     height: $sec5-contents-height;
-    @include bg-img('home-bg03.jpg');
+    // 一番後の背景画像
+    // @include bg-img('home-bg03.jpg');
     .wrap{
-        @include bg-wrap(#adb5bd);
+        // 手前の背景画像
+        // @include bg-wrap(#adb5bd);
         .inner{
             height: 100%;
             color:#ffffff;
@@ -47,7 +49,7 @@ section.workspace{
                 margin-bottom: 150px;
                 h2{
                     color: #333333;
-                    font-size: 2rem;
+                    font-size: 2.2rem;
                 }
                 &::before{
                     content: "Co-Working Space";
