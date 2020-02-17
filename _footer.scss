@@ -1,36 +1,43 @@
 footer{
     line-height: 2;
+    letter-spacing: 0.8px;
     p{
         padding: 0px;
         margin: 0px;
     }
-    // タスク９
     background-color: grey;
-    height: 500px;
+    height: 378px;
     .footer-wrapper{
         display: flex;
         justify-content: space-between;
-        padding: 150px 150px;
+        padding: 95px 130px;
         .footer-left-wrapper{
+            font-size: 14px;
             .footer-logo{
-                width: 100px;
+                width: 130px;
                 height: auto;
-                padding-bottom: 30px;
             }
             .footer-info{
-                font-size: 13px;
+                margin-top: 25px;
                 color: #ffffff;
+                font-family: 'Ubuntu', 'Noto Sans JP','NotoSansTC', 'PingFangSC', sans-serif;
+            }
+            small{
+                color: #ffffff;
+                padding-top: 70px;
+                display: inline-block;
             }
         }
         .footer-right-wrapper{
-            display: flex;
             color: #ffffff;
-            p{
-                margin-right: 30px;
+            transition: 0.5s;
+            i:hover{
+                opacity: 0.5;
+                transition: 0.5s;
             }
-        }
-        small{
-            color: #ffffff;
+            .facebook,.instagram{
+                padding-right: 51px;
+            }
         }
     }
 }

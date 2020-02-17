@@ -133,8 +133,9 @@ header .nav-info-button {
 
 footer {
   line-height: 2;
+  letter-spacing: 0.8px;
   background-color: grey;
-  height: 500px;
+  height: 378px;
 }
 
 footer p {
@@ -149,33 +150,44 @@ footer .footer-wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 150px 150px;
+  padding: 95px 130px;
+}
+
+footer .footer-wrapper .footer-left-wrapper {
+  font-size: 14px;
 }
 
 footer .footer-wrapper .footer-left-wrapper .footer-logo {
-  width: 100px;
+  width: 130px;
   height: auto;
-  padding-bottom: 30px;
 }
 
 footer .footer-wrapper .footer-left-wrapper .footer-info {
-  font-size: 13px;
+  margin-top: 25px;
   color: #ffffff;
+  font-family: 'Ubuntu', 'Noto Sans JP','NotoSansTC', 'PingFangSC', sans-serif;
+}
+
+footer .footer-wrapper .footer-left-wrapper small {
+  color: #ffffff;
+  padding-top: 70px;
+  display: inline-block;
 }
 
 footer .footer-wrapper .footer-right-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-footer .footer-wrapper .footer-right-wrapper p {
-  margin-right: 30px;
+footer .footer-wrapper .footer-right-wrapper i:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-footer .footer-wrapper small {
-  color: #ffffff;
+footer .footer-wrapper .footer-right-wrapper .facebook, footer .footer-wrapper .footer-right-wrapper .instagram {
+  padding-right: 51px;
 }
 
 main {
