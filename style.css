@@ -163,6 +163,21 @@ footer .footer-wrapper .footer-left-wrapper .footer-info {
   color: #ffffff;
 }
 
+footer .footer-wrapper .footer-right-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+}
+
+footer .footer-wrapper .footer-right-wrapper p {
+  margin-right: 30px;
+}
+
+footer .footer-wrapper small {
+  color: #ffffff;
+}
+
 main {
   margin: auto 120px;
 }

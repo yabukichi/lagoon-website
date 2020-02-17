@@ -22,5 +22,15 @@ footer{
                 color: #ffffff;
             }
         }
+        .footer-right-wrapper{
+            display: flex;
+            color: #ffffff;
+            p{
+                margin-right: 30px;
+            }
+        }
+        small{
+            color: #ffffff;
+        }
     }
 }
