@@ -5,3 +5,4 @@ Ryuji  Takamiyagi
 mako kamiya
 Mary okinawa
 minami yonaha
+Gakki

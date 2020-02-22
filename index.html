@@ -1,205 +1,302 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <!-- css -->
-    <link rel="stylesheet" href="style.css">
-    <!-- bootstrap4 -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    
-    <script src="https://kit.fontawesome.com/3d41a84b31.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg">
-            <div class="header-tb-left">
-                <a href="#"><img src="images/lagoon_logo.JPG" alt="lagoon_logo" class="logo"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item news">
-                        <a class="nav-link" href="#">ニュース</a>
-                    </li>
-                    <li class="nav-item service">
-                        <a class="nav-link" href="#">施設サービス</a>
-                    </li>
-                    <li class="nav-item space">
-                        <a class="nav-link" href="#">コワーキングスペース</a>
-                    </li>
-                    <li class="nav-item access">
-                        <a class="nav-link" href="#">アクセス</a>
-                    </li>
-                    <li class="nav-item about">
-                        <a class="nav-link" href="#">lagoonとは</a>
-                    </li>
-                    <li class="nav-item event">
-                        <a class="nav-link" href="#">イベント</a>
-                    </li>
-                    <li class="nav-item contact">
-                        <a class="nav-link" href="#">予約問い合わせ</a>
-                    </li>
-                    <li class="nav-item search dropdown">
-                        <div class="hover-img dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="search hover-none" src="images/icon-search-normal.png" alt="icon-search-normal">
-                            <img class="search hover-block" src="images/icon-search-hover.png">
-                        </div>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <!-- css -->
+        <link rel="stylesheet" href="style.css">
+        <!-- bootstrap4 -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        
+        <script src="https://kit.fontawesome.com/3d41a84b31.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg">
+                <div class="header-tb-left">
+                    <a href="#"><img src="images/lagoon_logo.JPG" alt="lagoon_logo" class="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item news">
+                            <a class="nav-link" href="#">ニュース</a>
+                        </li>
+                        <li class="nav-item service">
+                            <a class="nav-link" href="#">施設サービス</a>
+                        </li>
+                        <li class="nav-item space">
+                            <a class="nav-link" href="#">コワーキングスペース</a>
+                        </li>
+                        <li class="nav-item access">
+                            <a class="nav-link" href="#">アクセス</a>
+                        </li>
+                        <li class="nav-item about">
+                            <a class="nav-link" href="#">lagoonとは</a>
+                        </li>
+                        <li class="nav-item event">
+                            <a class="nav-link" href="#">イベント</a>
+                        </li>
+                        <li class="nav-item contact">
+                            <a class="nav-link" href="#">予約問い合わせ</a>
+                        </li>
+                        <li class="nav-item search dropdown">
+                            <div class="hover-img dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="search hover-none" src="images/icon-search-normal.png" alt="icon-search-normal">
+                                <img class="search hover-block" src="images/icon-search-hover.png">
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="hr"></div>
+                                <input type="search" name="search" placeholder="キーワードを入力してください…">
+                            </div>
+                        </li>
+                        <ul class="tb-sns none">
+                            <li class="tb-fb">
+                                <div class="hover-img">
+                                    <img class="hover-none" src="images/icon-fb-normal.png" alt="icon-fb-normal">
+                                    <img class="hover-block" src="images/icon-fb-hover.png" alt="icon-fb-normal">
+                                </div>
+                            </li>
+                            <li class="tb-ins">
+                                <div class="hover-img">
+                                    <img class="hover-none" src="images/footer-ins.png" alt="footer-ins"> <!--ない -->
+                                    <img class="hover-block" src="images/footer-ins.png" alt="footer-ins"> <!--ない -->
+                                </div>
+                            </li>
+                            <li class="tb-twitter ">
+                                <div class="hover-img">
+                                    <img class="hover-none" src="images/icon-twitter-normal.png" alt="icon-twitter-normal">
+                                    <img class="hover-block" src="images/icon-twitter-hover.png" alt="icon-twitter-normal">
+                                </div>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="header-tb-right">
+                    <ul class="tb header">
+                        <li class="tb-contact">
+                            <a href="#">予約問い合わせ</a>
+                        </li>
+                        <li class="tb-event">
+                            <a href="#">イベント</a>
+                        </li>
+                    </ul>
+                    <div class="search hover-img none dropdown dropdown-toggle"  type="button" id="dropdownMenuButtontb" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="hover-none" src="images/icon-search-normal.png" alt="icon-search-normal">
+                        <img class="hover-block" src="images/icon-search-hover.png" alt="icon-search-normal">
+                    </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButtontb">
                             <div class="hr"></div>
                             <input type="search" name="search" placeholder="キーワードを入力してください…">
                         </div>
-                    </li>
-                    <ul class="tb-sns none">
-                        <li class="tb-fb">
-                            <div class="hover-img">
-                                <img class="hover-none" src="images/icon-fb-normal.png" alt="icon-fb-normal">
-                                <img class="hover-block" src="images/icon-fb-hover.png" alt="icon-fb-normal">
-                            </div>
-                        </li>
-                        <li class="tb-ins">
-                            <div class="hover-img">
-                                <img class="hover-none" src="images/footer-ins.png" alt="footer-ins"> <!--ない -->
-                                <img class="hover-block" src="images/footer-ins.png" alt="footer-ins"> <!--ない -->
-                            </div>
-                        </li>
-                        <li class="tb-twitter ">
-                            <div class="hover-img">
-                                <img class="hover-none" src="images/icon-twitter-normal.png" alt="icon-twitter-normal">
-                                <img class="hover-block" src="images/icon-twitter-hover.png" alt="icon-twitter-normal">
-                            </div>
-                        </li>
-                    </ul>
-                </ul>
-            </div>
-            <div class="header-tb-right">
-                <ul class="tb header">
-                    <li class="tb-contact">
-                        <a href="#">予約問い合わせ</a>
-                    </li>
-                    <li class="tb-event">
-                        <a href="#">イベント</a>
-                    </li>
-                </ul>
-                <div class="search hover-img none dropdown dropdown-toggle"  type="button" id="dropdownMenuButtontb" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="hover-none" src="images/icon-search-normal.png" alt="icon-search-normal">
-                    <img class="hover-block" src="images/icon-search-hover.png" alt="icon-search-normal">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="cancel hover-img">
+                            <img class="cancel none hover-none" src="images/icon-cancel-normal.png" alt="icon-cancel-norma">
+                            <img class="cancel hover-block" src="images/icon-cancel-hover.png" alt="icon-cancel-norma">
+                        </div>
+                        <img class="buger" src="images/icon-buger.png" alt="icon-buger">
+                    </button>
                 </div>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButtontb">
-                        <div class="hr"></div>
-                        <input type="search" name="search" placeholder="キーワードを入力してください…">
-                    </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="cancel hover-img">
-                        <img class="cancel none hover-none" src="images/icon-cancel-normal.png" alt="icon-cancel-norma">
-                        <img class="cancel hover-block" src="images/icon-cancel-hover.png" alt="icon-cancel-norma">
-                    </div>
-                    <img class="buger" src="images/icon-buger.png" alt="icon-buger">
-                </button>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="homepage">
-            <section class="top_about">
-                <!-- タスク３ -->
-            </section>
-            <section class="services">
-                <div class="container services-container">
-                    <div class="services-title">
-                        <p>Service</p>
-                        <h2>提供する</h2>
-                    </div>
-                    <div class="container">
-                        <div class="row service-contents">
-                            <a href="#" class="col-lg-3 col-md-4 col-12 py-5 service-box1 text-decoration-none text-dark">
-                                <div class="mb-3 text-center service-content-img"><i class="fas fa-comments"></i></div>
-                                <div class="service-content">
-                                    <h3 class="text-center hover-change">創業相談</h3>
-                                    <p class="text-secondary text-center">地元企業 / 食品事業 / 社会サービス</p>
-                                    <br>
-                                    <p class="text-justify">【企業したいけど、いろいろな不安を抱えて一歩踏み出せない】</p>
-                                    <p class="text-justify"> 個人的なカウンセリングの提供に加えて、セミナーやワークショップはさまざまな
-                                        属性に基づいて編成されます。</p>
-                                </div>
-                            </a>
-                            <a href="#" class="col-lg-3 col-md-4 col-12 py-5 service-box2 text-decoration-none text-dark">
-                                <div class="mb-3 text-center service-content-img"><i class="fas fa-laptop-code"></i></div>
-                                <div class="service-content">
-                                    <h3 class="text-center hover-change">栽培コース</h3>
-                                    <p class="text-secondary text-center">programming / WordPress / ウェブ制作</p>
-                                    <br>
-                                    <p class="text-justify">【Webエンジニアになりたい】</p>
+            </nav>
+        </header>
+        <main>
+            <div class="homepage">
+                <section class="top_about">
+                    <!-- タスク３ -->
+                </section>
+                <section class="services">
+                    <div class="container-fluid services-container">
+                        <div class="services-title">
+                            <p class="services-title-p">Service</p>
+                            <h2>サービス</h2>
+                        </div>
+                        <div class="service-wrap">
+                            <div class="">
+                                <p>企業支援・ICT人材育成・モノづくりに関するイベントを開催しています。</p>
+                            </div>
+                            <div class="service-contents">
+
+
+                                <a href="#" class="service-box1 text-decoration-none">
+                                    <div class="service-content">
+                                        <div class="text-center service-content-img">
+                                            <img src="images/img-headset.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h3>創業相談</h3>
+                                            <p class="text-color-gray">地元企業 / 食品事業 / 社会サービス</p>
+                                        </div>
+                                    </div>
                                     <p class="text-justify">
-                                        コースの目的はプログラミングを学ぶことではなく、プログラミング
-                                        の仕組みと背景を学び、卒業後にエンジニアになることです。
+                                        【起業したいけど、いろいろな不安を抱えて一歩踏み出せない】<br>
+                                        個人的なカウンセリングの提供に加えて、セミナーやワークショップはさまざまな属性に基づいて編成されます。 </p>
+                                    <div class="service-border-link">
+                                    </div>
+                                </a>
+
+
+                                <a href="#" class="service-box2 text-decoration-none">
+                                    <div class="service-content">
+                                        <div class="text-center service-content-img">
+                                            <img src="images/img-book.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h3>栽培コース</h3>
+                                            <p class="text-color-gray text-center">programming / WordPress / ウェブ制作</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-justify">
+                                        【Webエンジニアになりたい】<br>
+                                        コースの目的はプログラミングを学ぶことではなく、
+                                        プログラミングの仕組みと背景を学び、卒業後にエンジニアになることです。
                                     </p>
-                                </div>
-                            </a>
-                            <a href="#" class="col-lg-3 col-md-4 col-12 py-5 service-box3 text-decoration-none text-dark">
-                                <div class="mb-3 text-center service-content-img"><i class="fas fa-print"></i></div>
-                                <div class="service-content">
-                                    <h3 class=" text-center hover-change">KOZA MAKERS</h3>
-                                    <p class="text-secondary text-center">地元企業 / 食品事業 / 社会サービス</p>
-                                    <br>
-                                    <p class="text-justify">【アイデアを物理的な作品に変えたい】</p>
+                                    <div class="service-border-link">
+                                    </div>
+                                </a>
+
+
+                                <a href="#" class="service-box3 text-decoration-none">
+                                    <div class="service-content">
+                                        <div class="text-center service-content-img">
+                                            <img src="images/img-maker.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h3>KOZA MAKERS</h3>
+                                            <p class="text-color-gray text-center">レーザーカッター / 3Dプリンター</p>
+                                        </div>
+                                    </div>
                                     <p class="text-justify">
+                                        【アイデアを物理的な作品に変えたい】<br>
                                         機械装置を提供するだけでなく、データの作成方法を教えたり、
-                                        装置の使用に関する定期的な講義やワークショップを開催したり
-                                        します。
+                                        装置の使用に関する定期的な講義やワークショップを開催したりします
                                     </p>
+                                    <div class="service-border-link">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- スマホ時に表示する -->
+                    <div class="container-fluid service-section-sp">
+                        <div class="cp_actab service-sp-collapse">
+                            <input id="collapse-one" type="radio" name="tabs2">
+                            <label for="collapse-one">
+                                <div class="service-content-sp">
+                                    <div class="service-content-img">
+                                        <img src="images/img-headset.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3 class="hover-change">創業相談</h3>
+                                        <p class="color-gray">地元企業 / 食品事業 / 社会サービス</p>
+                                    </div>
                                 </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="workspace">
-                <div class="container-fluid wrap">
-                    <div class="inner">
-                        <!-- タスク5 -->
-                        <div class="row">
-                            <div class="col-md-12 workspace-title">
-                                <h2>
-                                    施設概要
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 workspace-text">
-                                <p>
-                                    1F｜無料コワーキングスペース<br>
-                                    2F｜有料会員専用シェアオフィス<br>
-                                    リモートワーク、カフェ利用、打ち合わせ、勉強等など、<br>
-                                    様々な用途で利用可能なコワーキングスペースです。<br>
-                                    有料会員スペースは、お得な会員特典をご用意しております。
+                            </label>
+                            <div class="cp_actab-content service-sp-collapse-content">
+                                <p class="text-justify">
+                                    【起業したいけど、いろいろな不安を抱えて一歩踏み出せない】<br>
+                                    個人的なカウンセリングの提供に加えて、セミナーやワークショップはさまざまな属性に基づいて編成されます。
                                 </p>
-                                <a href="#" class="btn">シェアオフィス詳細一覧</a>
+                                <a href="">
+                                    <img src="images/btn-more-normal.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cp_actab service-sp-collapse">
+                            <input id="collapse-two" type="radio" name="tabs2">
+                            <label for="collapse-two">
+                                <div class="service-content-sp">
+                                    <div class="service-content-img">
+                                        <img src="images/img-book.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3 class="hover-change">栽培コース</h3>
+                                        <p class="color-gray">programming / WordPress / ウェブ制作</p>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="cp_actab-content service-sp-collapse-content">
+                                <p class="text-justify">
+                                    【Webエンジニアになりたい】<br>
+                                    コースの目的はプログラミングを学ぶことではなく、
+                                    プログラミングの仕組みと背景を学び、卒業後にエンジニアになることです。
+                                </p>
+                                <a href="">
+                                    <img src="images/btn-more-normal.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cp_actab service-sp-collapse">
+                            <input id="collapse-three" type="radio" name="tabs2">
+                            <label for="collapse-three">
+                                <div class="service-content-sp">
+                                    <div class="service-content-img">
+                                        <img src="images/img-maker.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3 class="hover-change">KOZA MAKERS</h3>
+                                        <p class="color-gray">レーザーカッター / 3Dプリンター</p>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="cp_actab-content service-sp-collapse-content">
+                                <p class="text-justify">【アイデアを物理的な作品に変えたい】<br>
+                                    機械装置を提供するだけでなく、データの作成方法を教えたり、
+                                    装置の使用に関する定期的な講義やワークショップを開催したり
+                                    します。
+                                </p>
+                                <a href="">
+                                    <img src="images/btn-more-normal.png" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div><!-- /wrap-->
-            </section>
-            <section class="events">
-                <!-- タスク６ -->
-            </section>
-            <section class="news">
-                <!-- タスク７ -->
-            </section>
-            <section class="contact">
-                <!-- タスク９ -->
-            </section>
-        </div>
-    </main>
-    <footer>
-        <!-- タスク１０ -->
-    </footer>
-
-    <script src="./jquery/jquery-3.4.1.min.js"></script>
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
-    <script src="./js/header.js"></script>
-</body>
-
+                </section>
+                <section class="workspace">
+                    <!-- <div class="container-fluid wrap">
+                        <div class="inner"> -->
+                    <!-- タスク5 -->
+                    <!-- <div class="row">
+                                <div class="col-md-12 workspace-title">
+                                    <h2>
+                                        施設概要
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 workspace-text">
+                                    <p>
+                                        1F｜無料コワーキングスペース<br>
+                                        2F｜有料会員専用シェアオフィス<br>
+                                        リモートワーク、カフェ利用、打ち合わせ、勉強等など、<br>
+                                        様々な用途で利用可能なコワーキングスペースです。<br>
+                                        有料会員スペースは、お得な会員特典をご用意しております。
+                                    </p>
+                                    <a href="#" class="btn">シェアオフィス詳細一覧</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </section>
+                <section class="events">
+                    <!-- タスク６ -->
+                </section>
+                <section class="news">
+                    <!-- タスク７ -->
+                </section>
+                <section class="contact">
+                    <!-- タスク９ -->
+                </section>
+            </div>
+        </main>
+        <footer>
+            <!-- タスク１０ -->
+        </footer>
+        <script src="./jquery/jquery-3.4.1.min.js"></script>
+        <script src="./bootstrap/js/bootstrap.min.js"></script>
+        <script src="./js/header.js"></script>
+    </body>
 </html>
