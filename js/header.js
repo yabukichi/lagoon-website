@@ -2,9 +2,7 @@
 $('.buger').click(function() {
     $('.search').removeClass('none');
     $('.cancel').removeClass('none');
-    $('.tb-fb').removeClass('none');
-    $('.tb-ins').removeClass('none');
-    $('.tb-twitter').removeClass('none');
+    $('.tb-sns').removeClass('none');
     
     $('.tb-contact').addClass('none');
     $('.tb-event').addClass('none');
@@ -16,9 +14,7 @@ $('.buger').click(function() {
 $('.cancel').click(function() {
     $('.search').addClass('none');
     $('.cancel').addClass('none');
-    $('.tb-fb').removeClass('none');
-    $('.tb-ins').removeClass('none');
-    $('.tb-twitter').removeClass('none');
+    $('.tb-sns').addClass('none');
     
     $('.tb-contact').removeClass('none');
     $('.tb-event').removeClass('none');

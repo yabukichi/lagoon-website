@@ -55,10 +55,18 @@ header {
         .show{
             position: unset;
             .hover-block {
-                display: inline-block;
+                display: none;
             }
             .hover-none {
-                display: none;
+                display: inline-block;
+            }
+            .hr {
+                width: 2000px;
+                border-bottom: 1px solid #8080805c;
+                position: absolute;
+                top: 0;
+                left: -141px;
+                box-shadow: 2px 2px 3px #8080805c;
             }
             .dropdown-menu.show {
                 padding: 40px 100px 40px 100px;
@@ -193,6 +201,14 @@ header {
                 height: 39px;
                 margin: 20px 0 21px 40px;
             }
+            .tb-sns {
+                display: flex;
+                margin: 103px 0 143px 0;
+                li.tb-ins {
+                    margin: 0 84px 0 86px;
+                    background-color: gray;
+                }
+            }
             .header-tb-right {
                 display: flex;
                 right: 0;
@@ -220,13 +236,6 @@ header {
                     li.tb-event {
                         @include nav-item-a (77px,18px);
                         @include header-btn (137px,46px,0,30px,29.5px);
-                    }
-                    &.sns {
-                        margin: 103px 0 143px 0;
-                        li.tb-ins {
-                            margin: 0 84px 0 86px;
-                            background-color: gray;
-                        }
                     }
                 }
                 img {
@@ -301,29 +310,41 @@ header {
                 height: 25px;
                 margin: 10px 0 10px 14px;
             }
+            .tb-sns {
+                display: none;
+            }
             .header-tb-right {
                 ul.tb {
                     &.header {
                         display: none;
                     }
-                    &.sns {
-                        margin: 43px 0 46px 0;
-                        li.tb-ins {
-                            margin: 0 34px 0 36px;
-                        }
-                    }
-                }
-                .search.hover-img {
-                    margin-right: 30px;
                 }
                 img {
                     width: 18px;
                     height: 18px;
                     object-fit: contain;
                 }
+                .search {
+                    &.hover-img {
+                        right: 62px;
+                        top: 10px;
+                    }
+                }
                 button.navbar-toggler {
                     margin-right: 14px;
+                    .cancel {
+                        &.hover-img {
+                            right: 14px;
+                            top: 12px;
+                        }
                     }
+                }
+                .dropdown-menu.show {
+                    margin: unset;
+                    width: 100%;
+                    top: 45px;
+                    height: 74px;
+                }
             }
             .navbar-collapse.collapse.show {
                 ul.navbar-nav {
