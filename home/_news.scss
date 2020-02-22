@@ -1,3 +1,44 @@
 .news{
     // タスク７
+    display: flex;
+    .news-title{
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-lr;
+        margin-bottom: 150px;
+        h2{
+            color: #333333;
+            font-size: 2.2rem;
+        }
+        &::before{
+            content: "infomation";
+            display: inline-block;
+            color: $accent-color;
+            padding: 5px 0;
+            transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+        }
+    }
+    .top-news{
+        p{
+            font-size: 14px;
+            span{
+                font-size: 12px;
+            }
+        }
+        .post-title{
+
+        }
+        .post-infomation{
+            display:flex;
+        }
+        .post-date{
+
+        }
+        .post-category{
+
+        }
+    }
 }

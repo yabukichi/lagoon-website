@@ -334,4 +334,48 @@ main {
   transform: scale(0.5);
   margin-left: 15%;
 }
+
+.homepage .news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.homepage .news .news-title {
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-lr;
+          writing-mode: vertical-lr;
+  margin-bottom: 150px;
+}
+
+.homepage .news .news-title h2 {
+  color: #333333;
+  font-size: 2.2rem;
+}
+
+.homepage .news .news-title::before {
+  content: "infomation";
+  display: inline-block;
+  color: #2ca6e0;
+  padding: 5px 0;
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.homepage .news .top-news p {
+  font-size: 14px;
+}
+
+.homepage .news .top-news p span {
+  font-size: 12px;
+}
+
+.homepage .news .top-news .post-infomation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=style.css.map */
