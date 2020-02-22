@@ -131,10 +131,6 @@ header .nav-info-button {
   padding: 0 1.5em;
 }
 
-main {
-  margin: auto 120px;
-}
-
 .homepage .services .services-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,98 +258,31 @@ main {
   }
 }
 
-.homepage section.workspace {
-  height: 800px;
+.homepage .news-section {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1180px;
 }
 
-.homepage section.workspace .wrap .inner {
-  height: 100%;
-  color: #ffffff;
-  z-index: 1;
-}
-
-.homepage section.workspace .wrap .inner .workspace-title {
+.homepage .news-section .news-title {
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-lr;
           writing-mode: vertical-lr;
   margin-bottom: 150px;
+  position: absolute;
+  left: 40px;
 }
 
-.homepage section.workspace .wrap .inner .workspace-title h2 {
+.homepage .news-section .news-title h2 {
   color: #333333;
-  font-size: 2.2rem;
+  font-size: 30px;
+  height: 150px;
+  letter-spacing: 5px;
 }
 
-.homepage section.workspace .wrap .inner .workspace-title::before {
-  content: "Co-Working Space";
-  display: inline-block;
-  color: #2ca6e0;
-  padding: 5px 0;
-  transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-}
-
-.homepage section.workspace .wrap .inner .workspace-text {
-  color: #333333;
-  font-size: 1.2rem;
-}
-
-.homepage section.workspace .wrap .inner .workspace-text p {
-  font-size: 16px;
-  margin-bottom: 60px;
-}
-
-.homepage section.workspace .wrap .inner .workspace-text a.btn {
-  color: #2ca6e0;
-  background-color: #ffffff;
-  border-radius: 24px;
-  border: 2px solid #2ca6e0;
-  width: 100%;
-  max-width: 300px;
-  text-align: left;
-  vertical-align: middle;
-}
-
-.homepage section.workspace .wrap .inner .workspace-text a.btn img {
-  margin-left: 30%;
-}
-
-.homepage section.workspace .wrap .inner .workspace-text a.btn:hover {
-  color: #ffffff;
-  background-color: #2ca6e0;
-}
-
-.homepage section.workspace .wrap .inner .workspace-text a.btn::after {
-  content: url(../images/g821.png);
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: scale(0.5);
-  transform: scale(0.5);
-  margin-left: 15%;
-}
-
-.homepage .news {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.homepage .news .news-title {
-  -ms-writing-mode: tb-rl;
-  -webkit-writing-mode: vertical-lr;
-          writing-mode: vertical-lr;
-  margin-bottom: 150px;
-}
-
-.homepage .news .news-title h2 {
-  color: #333333;
-  font-size: 2.2rem;
-}
-
-.homepage .news .news-title::before {
+.homepage .news-section .news-title::before {
   content: "infomation";
   display: inline-block;
   color: #2ca6e0;
@@ -365,17 +294,155 @@ main {
   -o-transform: rotate(180deg);
 }
 
-.homepage .news .top-news p {
+.homepage .news-section .contents {
+  width: 85%;
+  margin-right: 0;
+  padding-top: 35px;
+  padding-right: 46px;
+}
+
+.homepage .news-section .top-news {
+  margin-bottom: -2px;
+}
+
+.homepage .news-section .top-news p {
   font-size: 14px;
+  margin: 0;
 }
 
-.homepage .news .top-news p span {
+.homepage .news-section .top-news p span {
   font-size: 12px;
+  border-radius: 30.5px;
+  color: white;
+  padding: 1px 10px;
+  margin: 0 15px;
 }
 
-.homepage .news .top-news .post-infomation {
+.homepage .news-section .top-news a:hover {
+  text-decoration: blink;
+}
+
+.homepage .news-section .top-news a:hover .post-title {
+  color: #2ca6e0;
+  background: #f4f4f5;
+}
+
+.homepage .news-section .top-news a:hover .post-infomation {
+  background: #f4f4f5;
+}
+
+.homepage .news-section .top-news .post-title {
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: 0.8px;
+  color: #212426;
+  border-top: 2px solid #f4f4f5;
+  padding: 10px 10px 0 10px;
+}
+
+.homepage .news-section .top-news .post-infomation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-bottom: 2px solid #f4f4f5;
+  padding: 10px;
+}
+
+.homepage .news-section .top-news .post-date {
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: 0.8px;
+  color: #212426;
+}
+
+.homepage .news-section .top-news .post-category span.news {
+  background-color: #2ca6e0;
+}
+
+.homepage .news-section .top-news .post-category span.ad {
+  background-color: #d80b17;
+}
+
+.homepage .news-section .top-news .post-category span.update {
+  background-color: #f9db02;
+}
+
+@media (max-width: 767.98px) {
+  .homepage .news-section {
+    width: 89%;
+  }
+  .homepage .news-section .news-title {
+    left: 0px;
+  }
+  .homepage .news-section .contents {
+    width: 95%;
+    padding-right: 0;
+  }
+  .homepage .news-section .top-news {
+    width: 90%;
+    margin-left: 27px;
+    padding-left: 60px;
+  }
+  .homepage .news-section .top-news .post-title {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .homepage .news-section .top-news .post-infomation {
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .homepage .news-section {
+    width: 100%;
+  }
+  .homepage .news-section .news-title {
+    -webkit-writing-mode: initial;
+    -ms-writing-mode: initial;
+        writing-mode: initial;
+    margin-bottom: 51px;
+    position: relative;
+    text-align: center;
+  }
+  .homepage .news-section .news-title h2 {
+    height: auto;
+  }
+  .homepage .news-section .news-title::before {
+    content: "infomation";
+    display: inline-block;
+    color: #2ca6e0;
+    padding: 5px 0;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: initial;
+    -ms-transform: initial;
+    -moz-transform: initial;
+    -webkit-transform: initial;
+    -o-transform: initial;
+  }
+  .homepage .news-section .contents {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .homepage .news-section .top-news {
+    width: 100%;
+    padding: 0 14px;
+    margin: 0 0 -2px;
+  }
+  .homepage .news-section .top-news .post-title {
+    padding: 20px 20px 0 20px;
+  }
+  .homepage .news-section .row {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

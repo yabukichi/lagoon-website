@@ -1,18 +1,26 @@
-.news{
+.news-section{
     // タスク７
-    display: flex;
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1180px;
     .news-title{
         -ms-writing-mode: tb-rl;
         writing-mode: vertical-lr;
         margin-bottom: 150px;
+        position: absolute;
+        left: 40px;
         h2{
             color: #333333;
-            font-size: 2.2rem;
+            font-size: 30px;
+            height: 150px;
+            letter-spacing: 5px;
         }
         &::before{
             content: "infomation";
             display: inline-block;
-            color: $accent-color;
+            color: #2ca6e0;
             padding: 5px 0;
             transform: rotate(180deg);
             -ms-transform: rotate(180deg);
@@ -21,24 +29,145 @@
             -o-transform: rotate(180deg);
         }
     }
+    .contents{
+        width: 85%;
+        margin-right: 0;
+        padding-top: 35px;
+        padding-right: 46px;
+    }
     .top-news{
+        // border-top: 2px solid #f4f4f5;
+        // border-bottom: 2px solid #f4f4f5;
+        margin-bottom: -2px;
+        // padding: 10px 10px;
         p{
             font-size: 14px;
+            margin: 0;
             span{
                 font-size: 12px;
+                border-radius: 30.5px;
+                color: white;
+                padding: 1px 10px;
+                margin: 0 15px;
+            }
+        }
+        a:hover{
+            text-decoration: blink;
+            .post-title{
+                color: #2ca6e0;
+                background: #f4f4f5;
+            }
+            .post-infomation{
+                background: #f4f4f5;
             }
         }
         .post-title{
-
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.57;
+            letter-spacing: 0.8px;
+            color: #212426;
+            border-top: 2px solid #f4f4f5;
+            padding: 10px 10px 0 10px;
         }
         .post-infomation{
             display:flex;
+            border-bottom: 2px solid #f4f4f5;
+            padding: 10px;
         }
         .post-date{
-
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.57;
+            letter-spacing: 0.8px;
+            color: #212426;
         }
         .post-category{
+            span.news{
+                background-color: #2ca6e0;
+            }
+            span.ad{
+                background-color: #d80b17;
+            }
+            span.update{
+                background-color: #f9db02;
+            }
+        }
+    }
+    // Extra small devices (portrait phones, less than 576px)
+    // No media query since this is the default in Bootstrap
 
+
+    // Medium devices (tablets, 768px and up)
+    @media (max-width: 767.98px) {
+        width: 89%;
+        .news-title{
+            left: 0px;
+        }
+        .contents{
+            width: 95%;
+            padding-right: 0;
+        }
+        .top-news {
+            width: 90%;
+            margin-left: 27px;
+            padding-left: 60px;
+            .post-title{
+                padding-top: 20px;
+                padding-left: 20px;
+            }
+            .post-infomation{
+                padding-bottom: 20px;
+                padding-left: 20px;
+            }
+        }
+    }
+    // Extra small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {
+        width: 100%;
+        .news-title {
+            -webkit-writing-mode: initial;
+            writing-mode: initial;
+            margin-bottom: 51px;
+            position: relative;
+            text-align: center;
+            h2{
+                height: auto;
+            }
+        }
+        .news-title::before {
+            content: "infomation";
+            display: inline-block;
+            color: #2ca6e0;
+            padding: 5px 0;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transform: initial;
+            -ms-transform: initial;
+            -moz-transform: initial;
+            -webkit-transform: initial;
+            -o-transform: initial;
+        }
+        .contents {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .top-news{
+            width: 100%;
+            padding: 0 14px;
+            margin: 0 0 -2px;
+            .post-title{
+                padding: 20px 20px 0 20px;
+            }
+        }
+        .row{
+            margin: 0;
         }
     }
 }
