@@ -1,3 +1,63 @@
 .top_about{
     // タスク３
+    background-image: url(../images/top_about.png);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    margin-top: 50px;
+    margin-left: 12%;
+
+    .top_about::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .about-title > h1 {
+            font-size: 30px;
+            writing-mode: vertical-rl;
+            font-weight: bold;
+            letter-spacing: 10px;
+            line-height: 1.4;
+            margin-right: 30px;
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+    
+
+
+    .container {
+        display: flex;
+    }
+
+    .about-text {
+
+        h3 {
+            margin-top: 50px;
+            font-size: 16px;
+        }
+    
+        p {
+            font-size: 14px;
+            margin-bottom: 60px;
+        }
+    
+        a.btn {
+            text-decoration: none;
+            border: 1.5px solid #2ca6e0;
+            border-radius: 100px / 80px;
+            padding: 10px 24px;
+            color: #2ca6e0;
+            letter-spacing: 1px;
+    
+            .mgr-20 {
+            margin-right: 40px;
+            }
+        }
+    }
+
 }
