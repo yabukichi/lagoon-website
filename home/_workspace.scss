@@ -14,8 +14,6 @@ $img-path: '../images/';
     height: 100%;
     background-color: $value;
 }
-//セクションコンテンツの高さ
-$sec5-contents-height: 800px;
 
 // アクセントカラー
 $accent-color: #2ca6e0;
@@ -33,9 +31,18 @@ $accent-color: #2ca6e0;
 }
 
 .workspace{
-    height: $sec5-contents-height;
-    // 一番後の背景画像
-    // @include bg-img('home-bg03.jpg');
+    height: 800px;
+    // 後の背景画像
+    @include bg-img('hp-space-pc.png');
+    @include md{
+        height: 650px;
+        @include bg-img('pic-space-tablet.png');
+        background-position: bottom left;
+        background-size: contain;
+    }
+    @include sm{
+        height: 450px;
+    }
     .wrap{
         // 手前の背景画像
         // @include bg-wrap(#adb5bd);
@@ -46,16 +53,23 @@ $accent-color: #2ca6e0;
             .workspace-title{
                 -ms-writing-mode: tb-rl;
                 writing-mode: vertical-lr;
-                @media (max-width: 575.98px) {
+                margin-left: 35px;
+                @include sm {
                     -webkit-writing-mode: initial;
                     writing-mode: initial;
-                    margin-bottom: 51px;
+                    margin-bottom: 30px;
                     position: relative;
                     text-align: center;
+                    margin-left:0;
                 }
                 h2{
                     color: #333333;
                     font-size: 30px;
+                    font-weight: 500;
+                    @include sm{
+                        font-size: 18px;
+                        height: auto;
+                    }
                 }
                 &::before{
                     content: "Co-Working Space";
@@ -68,18 +82,55 @@ $accent-color: #2ca6e0;
                     -webkit-transform: rotate(180deg);
                     -o-transform: rotate(180deg);
                     font-size: 14px;
+                    @include sm{
+                        content: "Co-Working Space";
+                        display: inline-block;
+                        color: #2ca6e0;
+                        padding: 5px 0;
+                        position: absolute;
+                        top: 20px;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        transform: initial;
+                        -ms-transform: initial;
+                        -moz-transform: initial;
+                        -webkit-transform: initial;
+                        -o-transform: initial;
                     }
+                  }
                 }
                 .workspace-text{
                     color: #333333;
                     font-size: 1.2rem;
+                    margin-left: 35px;
+                    @include sm{
+                        margin-left: 0;
+                    }
                     p{
                         font-size: 16px;
                         margin-top: 120px;
                         margin-bottom: 60px;
+                        @include md{
+                            .pc-only{
+                                display: none;
+                            }
+                        }
+                        @include sm{
+                            margin-top: 30px;
+                            margin-bottom: 30px;
+                            font-size: 14px;
+                        }
                     }
                     a.btn {
                         @include button;
+                        @include md{
+                            max-width: 250px;
+                        }
+                        @include sm{
+                            max-width: 200px;
+                            font-size: 12px;
+                        }
                         img{
                             margin-left: 30%;
                         }
@@ -88,18 +139,18 @@ $accent-color: #2ca6e0;
                             background-color: $accent-color;
                         }
                         &::after{
-                            content: url(#{$img-path}g821.png);
+                            content: url(#{$img-path}btn-more-normal.png);
                             display: inline-block;
-                            vertical-align: middle;
-                            -webkit-transform: scale(0.5);
-                            transform: scale(0.5);
                             margin-left: 15%;
+                            @include md{
+                                margin-left: 5%;
+                            }
+                            @include sm{
+                                margin-left: 3%;
+                            }
                         }
                     }
                 }
             }
         }
 }
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {}
