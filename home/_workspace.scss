@@ -32,7 +32,7 @@ $accent-color: #2ca6e0;
     vertical-align: middle;
 }
 
-section.workspace{
+.workspace{
     height: $sec5-contents-height;
     // 一番後の背景画像
     // @include bg-img('home-bg03.jpg');
@@ -46,10 +46,16 @@ section.workspace{
             .workspace-title{
                 -ms-writing-mode: tb-rl;
                 writing-mode: vertical-lr;
-                margin-bottom: 150px;
+                @media (max-width: 575.98px) {
+                    -webkit-writing-mode: initial;
+                    writing-mode: initial;
+                    margin-bottom: 51px;
+                    position: relative;
+                    text-align: center;
+                }
                 h2{
                     color: #333333;
-                    font-size: 2.2rem;
+                    font-size: 30px;
                 }
                 &::before{
                     content: "Co-Working Space";
@@ -61,6 +67,7 @@ section.workspace{
                     -moz-transform: rotate(180deg);
                     -webkit-transform: rotate(180deg);
                     -o-transform: rotate(180deg);
+                    font-size: 14px;
                     }
                 }
                 .workspace-text{
@@ -68,6 +75,7 @@ section.workspace{
                     font-size: 1.2rem;
                     p{
                         font-size: 16px;
+                        margin-top: 120px;
                         margin-bottom: 60px;
                     }
                     a.btn {
@@ -92,3 +100,6 @@ section.workspace{
             }
         }
 }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
