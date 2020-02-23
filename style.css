@@ -266,7 +266,203 @@ main {
   margin: auto 120px;
 }
 
-.homepage .services {
+.homepage .services .services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.homepage .services .services-container .services-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.homepage .services .services-container .services-title h2 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  margin-right: 0;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  font-size: 32px;
+}
+
+.homepage .services .services-container .services-title p {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  margin-right: 0;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  color: #6DC0EA;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.homepage .services .container .service-contents {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.homepage .services .container .service-contents p {
+  font-size: 14px;
+}
+
+.homepage .services .container .service-contents .service-box1,
+.homepage .services .container .service-contents .service-box2,
+.homepage .services .container .service-contents .service-box3 {
+  border: 1px solid #f5f5f5;
+  background: white;
+  min-height: 400px;
+  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+          box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.homepage .services .container .service-contents .service-box1 h3,
+.homepage .services .container .service-contents .service-box2 h3,
+.homepage .services .container .service-contents .service-box3 h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.homepage .services .container .service-contents .service-box1:hover,
+.homepage .services .container .service-contents .service-box2:hover,
+.homepage .services .container .service-contents .service-box3:hover {
+  -webkit-box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.homepage .services .container .service-contents .service-box1:hover div .hover-change,
+.homepage .services .container .service-contents .service-box2:hover div .hover-change,
+.homepage .services .container .service-contents .service-box3:hover div .hover-change {
+  color: #6DC0EA;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.homepage .services .service-content-img .fa-comments,
+.homepage .services .service-content-img .fa-print,
+.homepage .services .service-content-img .fa-laptop-code {
+  font-size: 80px;
+  color: #6DC0EA;
+}
+
+@media screen and (max-width: 769px) {
+  .homepage .services .services-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homepage .services .services-container .services-title > p {
+    -webkit-transform: inherit;
+            transform: inherit;
+  }
+  .homepage .services .services-container .services-title {
+    position: inherit;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+  .homepage .services .services-container .services-title > h2 {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    position: inherit;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+  }
+  .homepage .services .services-container .services-title > p {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    position: inherit;
+  }
+}
+
+.homepage section.workspace {
+  height: 800px;
+}
+
+.homepage section.workspace .wrap .inner {
+  height: 100%;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.homepage section.workspace .wrap .inner .workspace-title {
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-lr;
+          writing-mode: vertical-lr;
+  margin-bottom: 150px;
+}
+
+.homepage section.workspace .wrap .inner .workspace-title h2 {
+  color: #333333;
+  font-size: 2.2rem;
+}
+
+.homepage section.workspace .wrap .inner .workspace-title::before {
+  content: "Co-Working Space";
+  display: inline-block;
+  color: #2ca6e0;
+  padding: 5px 0;
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.homepage section.workspace .wrap .inner .workspace-text {
+  color: #333333;
+  font-size: 1.2rem;
+}
+
+.homepage section.workspace .wrap .inner .workspace-text p {
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+.homepage section.workspace .wrap .inner .workspace-text a.btn {
+  color: #2ca6e0;
+  background-color: #ffffff;
+  border-radius: 24px;
+  border: 2px solid #2ca6e0;
   width: 100%;
+  max-width: 300px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.homepage section.workspace .wrap .inner .workspace-text a.btn img {
+  margin-left: 30%;
+}
+
+.homepage section.workspace .wrap .inner .workspace-text a.btn:hover {
+  color: #ffffff;
+  background-color: #2ca6e0;
+}
+
+.homepage section.workspace .wrap .inner .workspace-text a.btn::after {
+  content: url(../images/g821.png);
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  margin-left: 15%;
 }
 /*# sourceMappingURL=style.css.map */
