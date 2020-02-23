@@ -146,6 +146,11 @@ footer p {
 }
 
 footer .footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -156,7 +161,6 @@ footer .footer-wrapper {
 
 footer .footer-wrapper .footer-left-wrapper {
   font-size: 14px;
-  float: left;
 }
 
 footer .footer-wrapper .footer-left-wrapper .footer-logo {
@@ -171,20 +175,22 @@ footer .footer-wrapper .footer-left-wrapper .footer-info {
 }
 
 footer .footer-wrapper .footer-right-wrapper {
+  width: 166px;
   color: #ffffff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer .footer-wrapper .footer-right-wrapper i:hover {
   opacity: 0.5;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-footer .footer-wrapper .footer-right-wrapper .facebook, footer .footer-wrapper .footer-right-wrapper .instagram {
-  padding-right: 51px;
 }
 
 footer small {
@@ -195,7 +201,7 @@ footer small {
   float: left;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 991.98px) {
   footer {
     height: 338px;
   }
@@ -222,7 +228,7 @@ footer small {
   }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 575.98px) {
   footer {
     height: 400px;
     width: 100%;
@@ -241,7 +247,7 @@ footer small {
     padding-top: 18px;
   }
   footer .footer-wrapper .footer-right-wrapper {
-    text-align: center;
+    margin: 0 auto;
     float: none;
   }
   footer .small {
