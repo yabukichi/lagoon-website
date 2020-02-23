@@ -1,327 +1,108 @@
 .services {
-    font-family: NotoSansTC;
-    padding: 140px 0;
-
-    h3 {
-        font-size: 18px;
-        font-weight: bold;
-        color: #282828;
-        letter-spacing: 1.2px;
-        margin-top: 15px;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    p {
-        font-size: 14px;
-        line-height: 22px;
-        letter-spacing: .8px;
-        color: #282828;
-        margin-bottom: 50px;
-
-        &.text-color-gray {
-            color: #95959a;
-            height: 44px;
-            margin-bottom: 18px;
-            text-align: center;
-        }
-    }
-
     .services-container {
-        max-width: 1170px;
-        width: 100%;
         display: flex;
-        position: relative;
+        margin-top: 48px;
+        margin-bottom: 48px;
 
         .services-title {
+            display: flex;
+            position: relative;
+
             h2 {
                 writing-mode: vertical-rl;
                 margin-right: 0;
                 position: absolute;
-                top: -40px;
-                left: 25px;
-                font-size: 30px;
-                letter-spacing: 2.5px;
-                color: #282828;
-                font-weight: 500;
+                top: 0;
+                left: 30px;
+                font-size: 32px;
             }
 
             p {
                 writing-mode: vertical-rl;
                 margin-right: 0;
                 position: absolute;
-                top: -39px;
-                left: 5px;
+                top: 0px;
+                left: 10px;
                 color: #6DC0EA;
                 transform: rotate(-180deg);
+
             }
         }
+    }
 
-        .service-wrap {
-            max-width: 966px;
-            width: 100%;
-            box-sizing: border-box;
-            margin-left: auto;
-        }
-
+    .container {
         .service-contents {
-            display: flex;
+            justify-content: flex-end;
+
+            p {
+                font-size: 14px;
+            }
 
             .service-box1,
             .service-box2,
             .service-box3 {
-                max-width: 322px;
-                height: 580px;
-                padding: 71px 28px 73px;
                 border: 1px solid #f5f5f5;
                 background: white;
-                box-shadow: 0 0 20px 0 rgba(0, 0, 0, .12), 0 2px 3px 0 rgba(0, 0, 0, .22);
+                min-height: 400px;
+                box-shadow: 0 0 3px 0 rgba(0, 0, 0, .12), 0 2px 3px 0 rgba(0, 0, 0, .22);
                 transition: .3s;
-                position: relative;
-
-                &:hover {
-                    box-shadow: 0 15px 30px -5px rgba(0, 0, 0, .15), 0 0 5px rgba(0, 0, 0, .1);
-                    transform: translateY(-4px);
-
-                    h3 {
-                        color: #6DC0EA;
-                        transition: .4s;
-                    }
-                }
-
-
-                .service-content-img {
-                    max-width: 85px;
-                    height: 85px;
-                    margin: 0 auto;
-
-                    .fa-comments,
-                    .fa-laptop-code,
-                    .fa-print {
-                        font-size: 68px;
-                        line-height: 85px;
-                        color: #6DC0EA;
-                    }
-                }
-            }
-        }
-    }
-
-    .service-border-link {
-        position: absolute;
-        bottom: 28px;
-        left: 34px;
-
-        &::after {
-            content: '';
-            display: inline-block;
-            width: 33px;
-            height: 9px;
-            background-image: url(images/btn-more-normal.png);
-            background-size: contain;
-        }
-    }
-
-    @media screen and (max-width: 1025px) {
-        .services-container {
-            padding: 0;
-
-            .services-title {
-                p {
-                    left: 48px;
-                }
-
-                h2 {
-                    left: 68px;
-                }
-            }
-
-            .service-wrap {
-                // max-width: 570px;
-                width: 100%;
-                margin-left: 159px;
-                margin-right: 39px;
-            }
-
-            .service-contents {
-                flex-direction: column;
-
-                .service-box1,
-                .service-box2,
-                .service-box3 {
-                    height: auto;
-                    padding: 30px 40px 60px;
-                    max-width: 100%;
-
-                    .service-content {
-                        display: flex;
-
-                        .service-content-img {
-                            margin: 0;
-                            margin-right: 40px;
-                            max-width: 60px;
-                            height: 60px;
-
-                            img {
-                                line-height: 60px;
-                                width: 60px;
-                            }
-                        }
-
-                        h3 {
-                            margin-top: 0;
-                            margin-bottom: 5px;
-                            text-align: left;
-                        }
-
-                        .text-color-gray {
-                            height: auto;
-                            margin-bottom: 30px;
-                        }
-                    }
-                }
-            }
-        }
-
-        .service-border-link {
-            bottom: 30px;
-            left: 38px;
-
-            img {
-                max-width: 100%;
-                width: 60%;
-            }
-        }
-    }
-
-    @media screen and (max-width:426px) {
-        .services-container {
-            flex-direction: column;
-            text-align: center;
-
-            .services-title {
-                display: flex;
-                flex-direction: column-reverse;
-
-                p.services-title-p {
-                    position: static;
-                    writing-mode: lr-tb;
-                    transform: inherit;
-                    margin-bottom: 30px;
-                    font-size: 12px;
-                }
-
-                h2 {
-                    position: static;
-                    writing-mode: lr-tb;
-                    font-size: 18px;
-                    font-weight: bold;
-                    margin-bottom: 5px;
-                }
-            }
-
-            .service-wrap {
-                margin: 0;
-                padding: 0 15px;
-
-                .service-contents {
-                    display: none;
-                }
-
-                p {
-                    margin-bottom: 30px;
-                    text-align: justify;
-                }
-            }
-        }
-    }
-
-    .service-sp-collapse {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        margin-bottom: 1px;
-        color: #333;
-        border: 1px solid #f5f5f5;
-        box-shadow: 0 0 3px 0 rgba(0, 0, 0, .12), 0 2px 3px 0 rgba(0, 0, 0, .22);
-        transition: .3s;
-
-        input {
-            position: absolute;
-            z-index: -1;
-            opacity: 0;
-            padding: 15px 15px 0 15px;
-            background: white;
-
-            &:checked~.service-sp-collapse-content {
-                max-height: 20em;
-            }
-        }
-
-        label {
-            font-weight: bold;
-            line-height: 3;
-            position: relative;
-            display: block;
-            padding: 0 0 0 1em;
-            margin: 0 0 1px 0;
-            cursor: pointer;
-            /* background: #1b2538; */
-            padding: 15px 15px 0 15px;
-
-            .service-content-sp {
-                display: flex;
-
-                .service-content-img {
-                    width: 40px;
-                    height: 40px;
-                    margin-right: 20px;
-
-                    img {
-                        width: 40px;
-                        height: 40px;
-                        font-size: 40px;
-                    }
-                }
 
                 h3 {
-                    font-size: 16px;
-                    margin-bottom: 5px;
-                    margin-top: 0;
-                    text-align: left;
-                }
-
-                p.color-gray {
-                    line-height: normal;
-                    font-size: 14px;
-                    color: gray;
-                    margin-bottom: 20px;
+                    font-size: 24px;
+                    font-weight: bold;
                 }
             }
-        }
 
-        .service-sp-collapse-content {
-            overflow: hidden;
-            max-height: 0;
-            -webkit-transition: max-height 0.35s;
-            transition: max-height 0.35s;
-            /* background: #a9bce2; */
-            font-size: 14px;
+            .service-box1:hover,
+            .service-box2:hover,
+            .service-box3:hover {
+                box-shadow: 0 15px 30px -5px rgba(0, 0, 0, .15), 0 0 5px rgba(0, 0, 0, .1);
+                transform: translateY(-4px);
 
-            p {
-                margin: 0 15px 40px 15px;
+                div {
+                    .hover-change {
+                        color: #6DC0EA;
+                        transition: .4s;
+
+                    }
+                }
             }
-            a{
-                display: inline-block;
-                margin: 20px;
-            }
+
         }
     }
 
-    @media screen and (min-width:426px) {
-        .service-section-sp {
-            display: none;
-        }
+    .service-content-img .fa-comments,
+    .service-content-img .fa-print,
+    .service-content-img .fa-laptop-code {
+        font-size: 80px;
+        color: #6DC0EA;
     }
 
+    @media screen and (max-width:769px) {
+        .services-container {
+            flex-direction: column;
+        }
+
+        .services-container .services-title>p {
+            transform: inherit;
+        }
+
+        .services-container .services-title {
+            position: inherit;
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+
+        .services-container .services-title>h2 {
+            writing-mode: horizontal-tb;
+            position: inherit;
+            font-weight: bold;
+            letter-spacing: 0.3rem;
+        }
+
+        .services-container .services-title>p {
+            writing-mode: horizontal-tb;
+            position: inherit;
+        }
+    }
 }
