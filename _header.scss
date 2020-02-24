@@ -2,6 +2,7 @@
     display: none;
 }
 header {
+    height: 80px;
     @mixin nav-item-a ($w,$fs:16px){
         > a {
             width: $w;
@@ -69,6 +70,7 @@ header {
             height: 116px;
             box-shadow: 0 0 10px 0 rgba(48, 51, 62, 0.2), 0 0 0 0 rgba(48, 51, 62, 0.1);
             input {
+                width: 970px;
                 height: 34px;
                 border: unset;
                 border-bottom: 1px solid #f4f4f5;
@@ -95,8 +97,9 @@ header {
     .navbar{
         justify-content: center;
         padding: unset;
-        width: 100%;
         position: fixed;
+        right: 0;
+        left: 0;
         z-index: 1;
         margin: 0 auto;
         height: 80px;
@@ -136,6 +139,11 @@ header {
             .navbar-collapse {
                 ul.navbar-nav {
                     align-items: center;
+                    ul.tb-sns {
+                        img {
+                            width: 34px;
+                        }
+                    }
                     .nav-item {
                         &.news {
                             @include nav-item-a (64px);
