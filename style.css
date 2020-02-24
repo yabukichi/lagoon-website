@@ -1871,4 +1871,24 @@ footer small {
   -o-object-fit: contain;
      object-fit: contain;
 }
+
+@media screen and (max-width: 991.98px) {
+  #arrow_top {
+    bottom: 311px;
+    right: 39px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #arrow_top {
+    bottom: 308px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  #arrow_top {
+    bottom: 370px;
+    right: 14px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
