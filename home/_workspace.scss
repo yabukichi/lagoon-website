@@ -4,7 +4,8 @@ $img-path: '../images/';
 // 奥側の背景画像設定用
 @mixin bg-img($value){
     background-image: url('#{$img-path}#{$value}');
-    background-size: cover;
+    // background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -20,6 +21,7 @@ $accent-color: #2ca6e0;
 
 // ボタン
 @mixin button{
+    display: inline-block;
     color: $accent-color;
     background-color: #ffffff;
     border-radius: 24px;
@@ -30,18 +32,30 @@ $accent-color: #2ca6e0;
     vertical-align: middle;
 }
 
-.workspace{
-    height: 800px;
+%section-style{
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1180px;
+}
+
+section.workspace{
+    height: auto;
+    margin-bottom: 100px;
+    @extend %section-style;
     // 後の背景画像
     @include bg-img('hp-space-pc.png');
     @include md{
-        height: 650px;
-        @include bg-img('pic-space-tablet.png');
-        background-position: bottom left;
+        background-position: top left;
         background-size: contain;
+        width: 100%;
     }
     @include sm{
+        // @include bg-img('hp-space-pc.png');
         height: 450px;
+        background-position: bottom left;
+        margin-bottom: 60px;
     }
     .wrap{
         // 手前の背景画像
@@ -53,7 +67,9 @@ $accent-color: #2ca6e0;
             .workspace-title{
                 -ms-writing-mode: tb-rl;
                 writing-mode: vertical-lr;
-                margin-left: 35px;
+                width: 100%;
+                padding-left: 21px;
+                // margin-left: 35px;
                 @include sm {
                     -webkit-writing-mode: initial;
                     writing-mode: initial;
@@ -66,6 +82,8 @@ $accent-color: #2ca6e0;
                     color: #333333;
                     font-size: 30px;
                     font-weight: 500;
+                    height: 144px;
+                    letter-spacing: 5px;
                     @include sm{
                         font-size: 18px;
                         height: auto;
@@ -82,6 +100,7 @@ $accent-color: #2ca6e0;
                     -webkit-transform: rotate(180deg);
                     -o-transform: rotate(180deg);
                     font-size: 14px;
+                    letter-spacing: 0.5px;
                     @include sm{
                         content: "Co-Working Space";
                         display: inline-block;
@@ -103,21 +122,22 @@ $accent-color: #2ca6e0;
                 .workspace-text{
                     color: #333333;
                     font-size: 1.2rem;
-                    margin-left: 35px;
+                    // margin-left: 35px;
                     @include sm{
-                        margin-left: 0;
+                        // margin-left: 0;
                     }
                     p{
                         font-size: 16px;
                         margin-top: 120px;
                         margin-bottom: 60px;
+                        letter-spacing: 0.8px;
                         @include md{
                             .pc-only{
                                 display: none;
                             }
                         }
                         @include sm{
-                            margin-top: 30px;
+                            margin-top: 20px;
                             margin-bottom: 30px;
                             font-size: 14px;
                         }
