@@ -4,6 +4,7 @@ $('.buger').click(function() {
     $('.cancel').removeClass('none');
     $('.tb-sns').removeClass('none');
     
+    $('.nav-header').addClass('show');
     $('.tb-contact').addClass('none');
     $('.tb-event').addClass('none');
     $('.buger').addClass('none');
@@ -16,6 +17,7 @@ $('.cancel').click(function() {
     $('.cancel').addClass('none');
     $('.tb-sns').addClass('none');
     
+    $('.nav-header').removeClass('show');
     $('.tb-contact').removeClass('none');
     $('.tb-event').removeClass('none');
     $('.buger').removeClass('none');
@@ -24,11 +26,7 @@ $('.cancel').click(function() {
     $('footer').removeClass('none');
 })
 
-// $('.search.hover-block').click(function() {
-//     $('header').addClass('shadow');
-//     $('.search.hover-block').addClass('header-shadow');
-// })
-// $('.header-shadow').click(function() {
-//     $('header').removeClass('shadow');
-//     $('.search.hover-block').removeClass('header-shadow');
-// })
+$('.search-cancel').click(function() {
+    $('.header-tb-right').removeClass('show');
+    $('.dropdown-menu').removeClass('show');
+})
