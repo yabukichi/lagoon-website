@@ -1,3 +1,112 @@
 footer{
-    // タスク９
+    box-sizing: border-box;
+    line-height: 2;
+    letter-spacing: 0.8px;
+    background-color: grey;
+    height: 378px;
+    p{
+        padding: 0px;
+        margin: 0px;
+    }
+    .footer-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0px 130px;
+        padding-top: 95px;
+        padding-bottom: 70px;
+        .footer-left-wrapper{
+            font-size: 14px;
+            .footer-logo{
+                width: 130px;
+                height: auto;
+            }
+            .footer-info{
+                margin-top: 25px;
+                color: #ffffff;
+                font-family: 'Ubuntu', 'Noto Sans JP','NotoSansTC', 'PingFangSC', sans-serif;
+            }
+        }
+        .footer-right-wrapper{
+            width: 166px;
+            color: #ffffff;
+            transition: 0.5s;
+            display: flex;
+            justify-content: space-between;
+            i:hover{
+                opacity: 0.5;
+                transition: 0.5s;
+            }
+        }
+    }
+    small{
+        color: #ffffff;
+        padding-left: 130px;
+        clear: both;
+        float: left;
+    }
+}
+
+@media screen and (max-width:991.98px){
+    footer{
+        height: 338px;
+        .footer-wrapper{
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0 40px; 
+            padding-top: 70px;
+            .footer-left-wrapper{
+                .footer-info{
+                    white-space: nowrap;
+                }
+            }
+            .footer-right-wrapper{
+                .facebook{
+                    padding-right: 35px;
+                }
+                .instagram{
+                    padding-right: 35px;
+                }
+            }
+        }
+        small{
+            padding-left: 6%;
+            padding-top: 8%;
+            line-height: normal;
+        }
+    }
+}
+
+@media screen and (max-width:575.98px){
+    footer{
+        height: 400px;
+        width: 100%;
+        .footer-wrapper{
+            display: block;
+            padding: 0 14px;
+            .footer-left-wrapper{
+                padding-bottom: 60px;
+                padding-top: 80px;
+                float: none;
+                .footer-info{
+                    margin: 0 auto;
+                    padding-top: 18px;
+                }
+            }
+            .footer-right-wrapper{
+                margin: 0 auto;
+                float: none;
+            }
+        }
+        .small{
+            margin: 0 auto;
+            width: 292px;
+            small{
+                padding-top: 18px;
+                padding-left: 0;
+                font-size: 12px;
+                line-height: normal;
+            }
+        }
+    }
 }
