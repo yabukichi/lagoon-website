@@ -482,7 +482,7 @@ footer small {
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 575.98px) {
   .homepage .services .services-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -618,7 +618,7 @@ footer small {
   margin: 20px;
 }
 
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 575.98px) {
   .homepage .services .service-section-sp {
     display: none;
   }
@@ -749,25 +749,12 @@ footer small {
   margin: 0;
 }
 
-.homepage .news-section .top-news p span {
-  font-size: 12px;
-  border-radius: 30.5px;
-  color: white;
-  padding: 1px 10px;
-  margin: 0 15px;
-}
-
 .homepage .news-section .top-news a:hover {
   text-decoration: blink;
 }
 
-.homepage .news-section .top-news a:hover .post-title {
+.homepage .news-section .top-news .post-title:hover {
   color: #2ca6e0;
-  background: #f4f4f5;
-}
-
-.homepage .news-section .top-news a:hover .post-infomation {
-  background: #f4f4f5;
 }
 
 .homepage .news-section .top-news .post-title {
@@ -798,16 +785,29 @@ footer small {
   color: #212426;
 }
 
-.homepage .news-section .top-news .post-category span.news {
+.homepage .news-section .top-news .post-category a {
+  font-size: 12px;
+  border-radius: 30.5px;
+  color: white;
+  padding: 1px 10px;
+  margin: 0 15px;
+}
+
+.homepage .news-section .top-news .post-category a[href*="/event"] {
   background-color: #2ca6e0;
 }
 
-.homepage .news-section .top-news .post-category span.ad {
+.homepage .news-section .top-news .post-category a[href*="/news"] {
   background-color: #d80b17;
 }
 
 .homepage .news-section .top-news .post-category span.update {
   background-color: #f9db02;
+}
+
+.homepage .news-section .top-news:hover {
+  color: #2ca6e0;
+  background: #f4f4f5;
 }
 
 @media (max-width: 767.98px) {

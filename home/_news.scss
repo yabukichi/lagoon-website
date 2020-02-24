@@ -36,30 +36,16 @@
         padding-right: 46px;
     }
     .top-news{
-        // border-top: 2px solid #f4f4f5;
-        // border-bottom: 2px solid #f4f4f5;
         margin-bottom: -2px;
-        // padding: 10px 10px;
         p{
             font-size: 14px;
             margin: 0;
-            span{
-                font-size: 12px;
-                border-radius: 30.5px;
-                color: white;
-                padding: 1px 10px;
-                margin: 0 15px;
-            }
         }
         a:hover{
             text-decoration: blink;
-            .post-title{
-                color: #2ca6e0;
-                background: #f4f4f5;
-            }
-            .post-infomation{
-                background: #f4f4f5;
-            }
+        }
+        .post-title:hover{
+            color: #2ca6e0;
         }
         .post-title{
             font-weight: 500;
@@ -69,7 +55,7 @@
             letter-spacing: 0.8px;
             color: #212426;
             border-top: 2px solid #f4f4f5;
-            padding: 10px 10px 0 10px;
+            padding: 10px 10px 0 10px            
         }
         .post-infomation{
             display:flex;
@@ -85,16 +71,27 @@
             color: #212426;
         }
         .post-category{
-            span.news{
+            a{
+                font-size: 12px;
+                border-radius: 30.5px;
+                color: white;
+                padding: 1px 10px;
+                margin: 0 15px;
+            }
+            a[href*="/event"] {
                 background-color: #2ca6e0;
             }
-            span.ad{
+            a[href*="/news"] {
                 background-color: #d80b17;
             }
             span.update{
                 background-color: #f9db02;
             }
         }
+    }
+    .top-news:hover{
+        color: #2ca6e0;
+        background: #f4f4f5;
     }
     // Extra small devices (portrait phones, less than 576px)
     // No media query since this is the default in Bootstrap
