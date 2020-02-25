@@ -7,26 +7,29 @@
     margin-top: 50px;
     margin-left: 12%;
 
-    .top_about::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(0,0,0,0.5);
-    }
+    // .top_about::before{
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     background-color: rgba(0,0,0,0.5);
+    // }
 
-    .about-title > h1 {
-            font-size: 30px;
-            writing-mode: vertical-rl;
-            font-weight: bold;
-            letter-spacing: 10px;
-            line-height: 1.4;
-            margin-right: 30px;
-            margin-left: 100px;
-            margin-top: 50px;
-        }
+    .about-title {
+
+        h1 {
+                font-size: 30px;
+                writing-mode: vertical-rl;
+                font-weight: bold;
+                letter-spacing: 10px;
+                line-height: 1.4;
+                margin-right: 30px;
+                margin-left: 100px;
+                margin-top: 30px;
+            }
+    }
     
 
 
@@ -37,13 +40,13 @@
     .about-text {
 
         h3 {
-            margin-top: 50px;
+            margin-top: 30px;
             font-size: 16px;
         }
     
         p {
             font-size: 14px;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
     
         a.btn {
@@ -55,9 +58,17 @@
             letter-spacing: 1px;
     
             .mgr-20 {
-            margin-right: 40px;
+            margin-right: 20px;
             }
         }
     }
 
+    @media screen and (max-width:1025px) {
+        height: 100vh;
+        background-size: cover;
+    }
+
+    @media screen and (max-width:426px) {
+
+    }
 }
