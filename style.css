@@ -1584,7 +1584,36 @@ footer small {
 }
 
 .homepage section.workspace {
-  height: 800px;
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.homepage section.workspace {
+  height: auto;
+  margin-bottom: 100px;
+  background-image: url("./images/hp-space-pc.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 767.98px) {
+  .homepage section.workspace {
+    background-position: top left;
+    background-size: contain;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .homepage section.workspace {
+    height: 450px;
+    background-position: bottom left;
+    margin-bottom: 60px;
+  }
 }
 
 .homepage section.workspace .wrap .inner {
@@ -1597,12 +1626,35 @@ footer small {
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-lr;
           writing-mode: vertical-lr;
-  margin-bottom: 150px;
+  width: 100%;
+  padding-left: 21px;
+}
+
+@media screen and (max-width: 575.98px) {
+  .homepage section.workspace .wrap .inner .workspace-title {
+    -webkit-writing-mode: initial;
+    -ms-writing-mode: initial;
+        writing-mode: initial;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+    margin-left: 0;
+  }
 }
 
 .homepage section.workspace .wrap .inner .workspace-title h2 {
   color: #333333;
-  font-size: 2.2rem;
+  font-size: 30px;
+  font-weight: 500;
+  height: 144px;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 575.98px) {
+  .homepage section.workspace .wrap .inner .workspace-title h2 {
+    font-size: 18px;
+    height: auto;
+  }
 }
 
 .homepage section.workspace .wrap .inner .workspace-title::before {
@@ -1615,6 +1667,27 @@ footer small {
   -moz-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 575.98px) {
+  .homepage section.workspace .wrap .inner .workspace-title::before {
+    content: "Co-Working Space";
+    display: inline-block;
+    color: #2ca6e0;
+    padding: 5px 0;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: initial;
+    -ms-transform: initial;
+    -moz-transform: initial;
+    -webkit-transform: initial;
+    -o-transform: initial;
+  }
 }
 
 .homepage section.workspace .wrap .inner .workspace-text {
@@ -1624,10 +1697,27 @@ footer small {
 
 .homepage section.workspace .wrap .inner .workspace-text p {
   font-size: 16px;
+  margin-top: 120px;
   margin-bottom: 60px;
+  letter-spacing: 0.8px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .homepage section.workspace .wrap .inner .workspace-text p .pc-only {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .homepage section.workspace .wrap .inner .workspace-text p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
 }
 
 .homepage section.workspace .wrap .inner .workspace-text a.btn {
+  display: inline-block;
   color: #2ca6e0;
   background-color: #ffffff;
   border-radius: 24px;
@@ -1636,6 +1726,19 @@ footer small {
   max-width: 300px;
   text-align: left;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 767.98px) {
+  .homepage section.workspace .wrap .inner .workspace-text a.btn {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .homepage section.workspace .wrap .inner .workspace-text a.btn {
+    max-width: 200px;
+    font-size: 12px;
+  }
 }
 
 .homepage section.workspace .wrap .inner .workspace-text a.btn img {
@@ -1648,12 +1751,21 @@ footer small {
 }
 
 .homepage section.workspace .wrap .inner .workspace-text a.btn::after {
-  content: url(../images/g821.png);
+  content: url(./images/btn-more-normal.png);
   display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: scale(0.5);
-  transform: scale(0.5);
   margin-left: 15%;
+}
+
+@media screen and (max-width: 767.98px) {
+  .homepage section.workspace .wrap .inner .workspace-text a.btn::after {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .homepage section.workspace .wrap .inner .workspace-text a.btn::after {
+    margin-left: 3%;
+  }
 }
 
 .homepage .news-section {
