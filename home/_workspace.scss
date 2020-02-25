@@ -1,10 +1,11 @@
 // 背景画像のパス
-$img-path: '../images/';
+$img-path: './images/';
 
 // 奥側の背景画像設定用
 @mixin bg-img($value){
     background-image: url('#{$img-path}#{$value}');
-    background-size: cover;
+    // background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -14,14 +15,13 @@ $img-path: '../images/';
     height: 100%;
     background-color: $value;
 }
-//セクションコンテンツの高さ
-$sec5-contents-height: 800px;
 
 // アクセントカラー
 $accent-color: #2ca6e0;
 
 // ボタン
 @mixin button{
+    display: inline-block;
     color: $accent-color;
     background-color: #ffffff;
     border-radius: 24px;
@@ -32,10 +32,31 @@ $accent-color: #2ca6e0;
     vertical-align: middle;
 }
 
+%section-style{
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1180px;
+}
+
 section.workspace{
-    height: $sec5-contents-height;
-    // 一番後の背景画像
-    // @include bg-img('home-bg03.jpg');
+    height: auto;
+    margin-bottom: 100px;
+    @extend %section-style;
+    // 後の背景画像
+    @include bg-img('hp-space-pc.png');
+    @include md{
+        background-position: top left;
+        background-size: contain;
+        width: 100%;
+    }
+    @include sm{
+        // @include bg-img('hp-space-pc.png');
+        height: 450px;
+        background-position: bottom left;
+        margin-bottom: 60px;
+    }
     .wrap{
         // 手前の背景画像
         // @include bg-wrap(#adb5bd);
@@ -46,10 +67,27 @@ section.workspace{
             .workspace-title{
                 -ms-writing-mode: tb-rl;
                 writing-mode: vertical-lr;
-                margin-bottom: 150px;
+                width: 100%;
+                padding-left: 21px;
+                // margin-left: 35px;
+                @include sm {
+                    -webkit-writing-mode: initial;
+                    writing-mode: initial;
+                    margin-bottom: 30px;
+                    position: relative;
+                    text-align: center;
+                    margin-left:0;
+                }
                 h2{
                     color: #333333;
-                    font-size: 2.2rem;
+                    font-size: 30px;
+                    font-weight: 500;
+                    height: 144px;
+                    letter-spacing: 5px;
+                    @include sm{
+                        font-size: 18px;
+                        height: auto;
+                    }
                 }
                 &::before{
                     content: "Co-Working Space";
@@ -61,17 +99,58 @@ section.workspace{
                     -moz-transform: rotate(180deg);
                     -webkit-transform: rotate(180deg);
                     -o-transform: rotate(180deg);
+                    font-size: 14px;
+                    letter-spacing: 0.5px;
+                    @include sm{
+                        content: "Co-Working Space";
+                        display: inline-block;
+                        color: #2ca6e0;
+                        padding: 5px 0;
+                        position: absolute;
+                        top: 20px;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        transform: initial;
+                        -ms-transform: initial;
+                        -moz-transform: initial;
+                        -webkit-transform: initial;
+                        -o-transform: initial;
                     }
+                  }
                 }
                 .workspace-text{
                     color: #333333;
                     font-size: 1.2rem;
+                    // margin-left: 35px;
+                    @include sm{
+                        // margin-left: 0;
+                    }
                     p{
                         font-size: 16px;
+                        margin-top: 120px;
                         margin-bottom: 60px;
+                        letter-spacing: 0.8px;
+                        @include md{
+                            .pc-only{
+                                display: none;
+                            }
+                        }
+                        @include sm{
+                            margin-top: 20px;
+                            margin-bottom: 30px;
+                            font-size: 14px;
+                        }
                     }
                     a.btn {
                         @include button;
+                        @include md{
+                            max-width: 250px;
+                        }
+                        @include sm{
+                            max-width: 200px;
+                            font-size: 12px;
+                        }
                         img{
                             margin-left: 30%;
                         }
@@ -80,12 +159,15 @@ section.workspace{
                             background-color: $accent-color;
                         }
                         &::after{
-                            content: url(#{$img-path}g821.png);
+                            content: url(#{$img-path}btn-more-normal.png);
                             display: inline-block;
-                            vertical-align: middle;
-                            -webkit-transform: scale(0.5);
-                            transform: scale(0.5);
                             margin-left: 15%;
+                            @include md{
+                                margin-left: 5%;
+                            }
+                            @include sm{
+                                margin-left: 3%;
+                            }
                         }
                     }
                 }
