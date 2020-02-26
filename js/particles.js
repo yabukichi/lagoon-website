@@ -7,9 +7,9 @@ bubbly({
     colorStart: "#fff",
     colorStop: "#fff",
     blur: 1,
-    bubbles: 220,
+    bubbles: 20,
     compose: "source-over",
-    shadowColor: "#5DB09B",
+    shadowColor: "#fff",
     radiusFunc: () => Math.random() * 15,
-    bubbleFunc: () => `hsla(${Math.random() * 360}, 100%, 80%, 1)`, // 色相,彩度,明度,透明度
+    bubbleFunc: () => `hsla(${Math.random() * 360}, 100%, 50%, .5)`, // 色相,彩度,明度,透明度
   });
