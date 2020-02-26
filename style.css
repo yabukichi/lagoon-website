@@ -1956,19 +1956,19 @@ footer small {
   }
 }
 
-.homepage p {
-  margin: 0;
-}
-
-.homepage h3 {
-  margin: 0;
-}
-
 .homepage .contact {
   width: 100%;
   margin: 0 auto;
   padding-left: 7%;
   position: relative;
+}
+
+.homepage .contact p {
+  margin: 0;
+}
+
+.homepage .contact h3 {
+  margin: 0;
 }
 
 .homepage .contact .contact-text {
@@ -1982,10 +1982,12 @@ footer small {
   font-weight: 500;
   font-size: 30px;
   padding-bottom: 53px;
+  letter-spacing: 2.5px;
 }
 
 .homepage .contact .contact-text .contact-text-detail {
   font-size: 16px;
+  letter-spacing: 1px;
 }
 
 .homepage .contact img {
