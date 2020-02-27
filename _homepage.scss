@@ -1,4 +1,12 @@
 .homepage{
+    margin: 0 0 0 5%;
+    position: relative;
+    aside{
+        position: fixed;
+    }
+    @media (max-width: 575.98px) {
+        margin: 0 0 0 0;
+    }
     @import 'home/top_about';
     @import 'home/services';
     @import 'home/workspace';
