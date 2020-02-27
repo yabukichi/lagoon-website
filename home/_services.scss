@@ -1,7 +1,6 @@
 .services {
     // font-family: NotoSansTC;
-    padding: 140px 0;
-
+    padding: 0 0 70px;
     h3 {
         font-size: 18px;
         font-weight: bold;
@@ -251,15 +250,17 @@
                 text-align: center;
                 h2{
                     height: auto;
+                    font-size: 18px;
                 }
             }
             .services-title::before {
                 content: "infomation";
                 display: inline-block;
                 color: #2ca6e0;
-                padding: 5px 0;
+                padding: 0;
+                font-size: 12px;
                 position: absolute;
-                top: 40px;
+                top: 23px;
                 left: 0;
                 right: 0;
                 margin: auto;
