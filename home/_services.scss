@@ -1,7 +1,6 @@
 .services {
-    font-family: NotoSansTC;
-    padding: 140px 0;
-
+    // font-family: NotoSansTC;
+    padding: 0 0 70px;
     h3 {
         font-size: 18px;
         font-weight: bold;
@@ -28,40 +27,64 @@
     }
 
     .services-container {
-        max-width: 1170px;
+        max-width: 1160px;
         width: 100%;
         display: flex;
         position: relative;
 
-        .services-title {
-            h2 {
-                writing-mode: vertical-rl;
-                margin-right: 0;
-                position: absolute;
-                top: -40px;
-                left: 25px;
-                font-size: 30px;
-                letter-spacing: 2.5px;
-                color: #282828;
-                font-weight: 500;
-            }
+        // .services-title {
+        //     h2 {
+        //         writing-mode: vertical-rl;
+        //         margin-right: 0;
+        //         position: absolute;
+        //         top: -40px;
+        //         left: 25px;
+        //         font-size: 30px;
+        //         letter-spacing: 2.5px;
+        //         color: #282828;
+        //         font-weight: 500;
+        //     }
 
-            p {
-                writing-mode: vertical-rl;
-                margin-right: 0;
-                position: absolute;
-                top: -39px;
-                left: 5px;
-                color: #6DC0EA;
-                transform: rotate(-180deg);
+        //     p {
+        //         writing-mode: vertical-rl;
+        //         margin-right: 0;
+        //         position: absolute;
+        //         top: -39px;
+        //         left: 5px;
+        //         color: #6DC0EA;
+        //         transform: rotate(-180deg);
+        //     }
+        // }
+        .services-title{
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-lr;
+            margin-bottom: 150px;
+            position: absolute;
+    
+            h2{
+                color: #333333;
+                font-size: 30px;
+                height: 150px;
+                letter-spacing: 5px;
+            }
+            &::before{
+                content: "services";
+                display: inline-block;
+                color: #2ca6e0;
+                transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
             }
         }
 
         .service-wrap {
             max-width: 966px;
-            width: 100%;
+            width: 85%;
             box-sizing: border-box;
             margin-left: auto;
+            margin-top: 40px;
         }
 
         .service-contents {
@@ -199,25 +222,53 @@
             flex-direction: column;
             text-align: center;
 
+            // .services-title {
+            //     display: flex;
+            //     flex-direction: column-reverse;
+
+            //     p.services-title-p {
+            //         position: static;
+            //         writing-mode: lr-tb;
+            //         transform: inherit;
+            //         margin-bottom: 30px;
+            //         font-size: 12px;
+            //     }
+
+            //     h2 {
+            //         position: static;
+            //         writing-mode: lr-tb;
+            //         font-size: 18px;
+            //         font-weight: bold;
+            //         margin-bottom: 5px;
+            //     }
+            // }
             .services-title {
-                display: flex;
-                flex-direction: column-reverse;
-
-                p.services-title-p {
-                    position: static;
-                    writing-mode: lr-tb;
-                    transform: inherit;
-                    margin-bottom: 30px;
-                    font-size: 12px;
-                }
-
-                h2 {
-                    position: static;
-                    writing-mode: lr-tb;
+                -webkit-writing-mode: initial;
+                writing-mode: initial;
+                margin-bottom: 51px;
+                position: relative;
+                text-align: center;
+                h2{
+                    height: auto;
                     font-size: 18px;
-                    font-weight: bold;
-                    margin-bottom: 5px;
                 }
+            }
+            .services-title::before {
+                content: "infomation";
+                display: inline-block;
+                color: #2ca6e0;
+                padding: 0;
+                font-size: 12px;
+                position: absolute;
+                top: 23px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                transform: initial;
+                -ms-transform: initial;
+                -moz-transform: initial;
+                -webkit-transform: initial;
+                -o-transform: initial;
             }
 
             .service-wrap {

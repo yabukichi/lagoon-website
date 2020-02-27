@@ -5,7 +5,7 @@ $img-path: './images/';
 @mixin bg-img($value){
     background-image: url('#{$img-path}#{$value}');
     // background-size: cover;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -35,14 +35,14 @@ $accent-color: #2ca6e0;
 %section-style{
     display: block;
     position: relative;
-    width: 90%;
+    width: auto;
     margin: 0 auto;
-    max-width: 1180px;
 }
 
 section.workspace{
     height: auto;
     margin-bottom: 100px;
+    margin-left: auto;
     @extend %section-style;
     // 後の背景画像
     @include bg-img('hp-space-pc.png');
@@ -55,7 +55,7 @@ section.workspace{
         // @include bg-img('hp-space-pc.png');
         height: 450px;
         background-position: bottom left;
-        margin-bottom: 60px;
+        margin-bottom: 70px;
     }
     .wrap{
         // 手前の背景画像
@@ -68,7 +68,6 @@ section.workspace{
                 -ms-writing-mode: tb-rl;
                 writing-mode: vertical-lr;
                 width: 100%;
-                padding-left: 21px;
                 // margin-left: 35px;
                 @include sm {
                     -webkit-writing-mode: initial;
@@ -93,7 +92,6 @@ section.workspace{
                     content: "Co-Working Space";
                     display: inline-block;
                     color: $accent-color;
-                    padding: 5px 0;
                     transform: rotate(180deg);
                     -ms-transform: rotate(180deg);
                     -moz-transform: rotate(180deg);
@@ -107,6 +105,7 @@ section.workspace{
                         color: #2ca6e0;
                         padding: 5px 0;
                         position: absolute;
+                        font-size: 12px;
                         top: 20px;
                         left: 0;
                         right: 0;
@@ -122,6 +121,7 @@ section.workspace{
                 .workspace-text{
                     color: #333333;
                     font-size: 1.2rem;
+                    line-height: 24px;
                     // margin-left: 35px;
                     @include sm{
                         // margin-left: 0;
