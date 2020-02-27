@@ -1241,7 +1241,7 @@ section {
 }
 
 .homepage .services {
-  padding: 140px 0;
+  padding: 0 0 70px;
 }
 
 .homepage .services h3 {
@@ -1478,14 +1478,16 @@ section {
   }
   .homepage .services .services-container .services-title h2 {
     height: auto;
+    font-size: 18px;
   }
   .homepage .services .services-container .services-title::before {
     content: "infomation";
     display: inline-block;
     color: #2ca6e0;
-    padding: 5px 0;
+    padding: 0;
+    font-size: 12px;
     position: absolute;
-    top: 40px;
+    top: 23px;
     left: 0;
     right: 0;
     margin: auto;
@@ -1630,7 +1632,7 @@ section {
   .homepage section.workspace {
     height: 450px;
     background-position: bottom left;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
   }
 }
 
@@ -1694,6 +1696,7 @@ section {
     color: #2ca6e0;
     padding: 5px 0;
     position: absolute;
+    font-size: 12px;
     top: 20px;
     left: 0;
     right: 0;
@@ -1789,7 +1792,7 @@ section {
   max-width: 1160px;
   width: 100%;
   margin: 0 auto;
-  padding: 140px 0;
+  padding: 0 0 70px;
   overflow: hidden;
   position: relative;
 }
@@ -2132,14 +2135,16 @@ section {
   }
   .homepage .events .events-title h2 {
     height: auto;
+    font-size: 18px;
   }
   .homepage .events .events-title::before {
     content: "infomation";
     display: inline-block;
     color: #2ca6e0;
-    padding: 5px 0;
+    padding: 0;
+    font-size: 12px;
     position: absolute;
-    top: 40px;
+    top: 23px;
     left: 0;
     right: 0;
     margin: auto;
@@ -2167,6 +2172,7 @@ section {
   width: 100%;
   margin: 0 auto;
   max-width: 1160px;
+  padding: 0 0 70px;
 }
 
 .homepage .news-section .news-title {
@@ -2312,14 +2318,16 @@ section {
   }
   .homepage .news-section .news-title h2 {
     height: auto;
+    font-size: 18px;
   }
   .homepage .news-section .news-title::before {
     content: "infomation";
     display: inline-block;
     color: #2ca6e0;
-    padding: 5px 0;
+    padding: 0;
+    font-size: 12px;
     position: absolute;
-    top: 40px;
+    top: 23px;
     left: 0;
     right: 0;
     margin: auto;
