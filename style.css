@@ -1615,7 +1615,7 @@ section {
   height: auto;
   margin-bottom: 100px;
   margin-left: auto;
-  background-image: url("./images/hp-space-pc.png");
+  background-image: url("./images/pic-home-space-desktop@3x.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1798,6 +1798,10 @@ section {
   position: relative;
 }
 
+.homepage .events li {
+  list-style: none;
+}
+
 .homepage .events .events-title {
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-lr;
@@ -1841,28 +1845,25 @@ section {
 .homepage .events .home-events-sliderArea .home-events-card {
   max-width: 370px;
   width: 100%;
-  height: 445px;
+  height: 400px;
   background-color: #f4f4f5;
   border-radius: 2px;
   margin: 20px 14px;
-}
-
-.homepage .events .home-events-sliderArea .home-events-card a {
-  display: block;
-  height: 445px;
 }
 
 .homepage .events .home-events-sliderArea .home-events-card a:hover {
   text-decoration: none;
 }
 
-.homepage .events .home-events-sliderArea .home-events-card a img {
+.homepage .events .home-events-sliderArea .home-events-card img {
   max-width: 100%;
   width: 100%;
-  height: auto;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.homepage .events .home-events-sliderArea .home-events-card a .home-events-date {
+.homepage .events .home-events-sliderArea .home-events-card .home-events-date {
   width: 270px;
   height: 36px;
   border-radius: 30px;
@@ -1881,32 +1882,53 @@ section {
   font-size: 14px;
 }
 
-.homepage .events .home-events-sliderArea .home-events-card a .home-events-p {
+.homepage .events .home-events-sliderArea .home-events-card .home-events-p {
   margin-left: 25px;
   margin-right: 25px;
   color: #212426;
   margin-bottom: 0;
 }
 
-.homepage .events .home-events-sliderArea .home-events-card a .home-events-tag {
-  display: inline-block;
-  background: white;
-  padding: 3px 15px;
-  border-radius: 20px;
-  position: relative;
-  bottom: -70px;
-  left: 20px;
+.homepage .events .home-events-sliderArea .home-events-card .home-events-tag {
+  margin: 75px 25px 0;
 }
 
-.homepage .events .home-events-sliderArea .home-events-card a .home-events-tag p {
+.homepage .events .home-events-sliderArea .home-events-card .home-events-tag p {
   margin-bottom: 0;
   font-size: 12px;
   color: #95959a;
 }
 
-.homepage .events .home-events-sliderArea .home-events-card a .home-events-tag p span {
+.homepage .events .home-events-sliderArea .home-events-card .home-events-tag p span {
   color: #8cc21f;
   margin-right: 5px;
+}
+
+.homepage .events .home-events-sliderArea .home-events-card .home-events-tag a {
+  font-size: 12px;
+  color: #95959a;
+}
+
+.homepage .events .home-events-sliderArea .home-events-card .home-events-tag a[href*="/event"] {
+  background: white;
+  padding: 3px 15px;
+  margin-right: 10px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.homepage .events .home-events-sliderArea .home-events-card .home-events-tag a[href*="/news"] {
+  background: white;
+  padding: 3px 15px;
+  margin-right: 10px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.homepage .events .home-events-sliderArea .home-events-card .home-events-tag .post-categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .homepage .events .slick-slider .slick-list.draggable {
@@ -2026,15 +2048,15 @@ section {
 .homepage .events .events-wrap-sp .home-events-card {
   max-width: 370px;
   width: 100%;
-  height: 445px;
+  height: 400px;
   background-color: #f4f4f5;
   border-radius: 2px;
   margin: 20px auto;
 }
 
-.homepage .events .events-wrap-sp .home-events-card a {
-  display: block;
-  height: 445px;
+.homepage .events .events-wrap-sp .home-events-card img {
+  max-width: 100%;
+  height: auto;
 }
 
 .homepage .events .events-wrap-sp .home-events-card a .home-events-date {
@@ -2101,9 +2123,6 @@ section {
   }
   .homepage .events .events-container .events-wrap .home-events-sliderArea .home-events-card {
     max-width: 330px;
-    height: 397px;
-  }
-  .homepage .events .events-container .events-wrap .home-events-sliderArea .home-events-card a {
     height: 397px;
   }
   .homepage .events .events-container .events-wrap .home-events-sliderArea .home-events-card a .home-events-date {
@@ -2235,6 +2254,10 @@ section {
   color: #212426;
   border-top: 2px solid #f4f4f5;
   padding: 10px 10px 0 10px;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .homepage .news-section .top-news .post-infomation {
@@ -2298,6 +2321,7 @@ section {
   .homepage .news-section .top-news .post-title {
     padding-top: 20px;
     padding-left: 20px;
+    width: 100%;
   }
   .homepage .news-section .top-news .post-infomation {
     padding-bottom: 20px;
