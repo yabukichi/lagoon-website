@@ -45,7 +45,7 @@ section.workspace{
     margin-left: auto;
     @extend %section-style;
     // 後の背景画像
-    @include bg-img('hp-space-pc.png');
+    @include bg-img('pic-home-space-desktop@3x.png');
     @include md{
         background-position: top left;
         background-size: contain;
