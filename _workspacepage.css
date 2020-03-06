@@ -444,6 +444,14 @@
   .workspacepage .contents .tab-content .member-secton .member-introduction-contents .member-introduction-content:nth-child(3n) {
     margin-right: 0;
   }
+  .workspacepage .contents .tab-content .compare-section {
+    position: relative;
+  }
+  .workspacepage .contents .tab-content .compare-section .top_banner_spaceTitle {
+    position: absolute;
+    left: 0px;
+    top: -66px;
+  }
   .workspacepage .contents .tab-content .compare-section .table-pc {
     display: none;
   }

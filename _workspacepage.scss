@@ -476,6 +476,14 @@
                 }
 
                 .compare-section {
+                    position: relative;
+
+                    .top_banner_spaceTitle {
+                        position: absolute;
+                        left: 0px;
+                        top: -66px;
+                    }
+
                     .table-pc {
                         display: none;
                     }
@@ -793,7 +801,8 @@
                         .nav-tabs {
                             .nav-item {
                                 max-width: 128px;
-                                .table-mobile-1{
+
+                                .table-mobile-1 {
                                     line-height: 50px;
                                 }
                             }
@@ -813,7 +822,8 @@
                         .nav-tabs {
                             .nav-item {
                                 max-width: 110px;
-                                .table-mobile-1{
+
+                                .table-mobile-1 {
                                     line-height: 25px;
                                 }
                             }
