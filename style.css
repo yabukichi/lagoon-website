@@ -3028,9 +3028,39 @@ section {
 }
 
 @media screen and (max-width: 541px) {
+  .workspacepage {
+    padding-bottom: 80px;
+  }
+  .workspacepage .top_banner {
+    margin-left: 0;
+    margin-bottom: 14px;
+    height: auto;
+  }
+  .workspacepage .top_banner .top_banner_spaceTitle {
+    left: 15px;
+    top: 30px;
+  }
+  .workspacepage .top_banner .top_banner_spaceTitle h2 {
+    font-size: 18px;
+    line-height: 20px;
+    -webkit-writing-mode: horizontal-tb;
+    -ms-writing-mode: lr-tb;
+    writing-mode: horizontal-tb;
+    text-align: left;
+  }
+  .workspacepage .top_banner .top_banner_spaceTitle h2::before {
+    font-size: 12px;
+    -webkit-writing-mode: horizontal-tb;
+    -ms-writing-mode: lr-tb;
+    writing-mode: horizontal-tb;
+    -webkit-transform: inherit;
+    transform: inherit;
+    text-align: center;
+  }
   .workspacepage .contents {
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 0;
   }
   .workspacepage .contents .tab-content {
     padding-top: 15px;
@@ -3079,6 +3109,9 @@ section {
   }
   .workspacepage .contents .tab-content .tab-pane .equipment-section .equipment-contents .equipment-content {
     margin-bottom: 18px;
+  }
+  .workspacepage .contents .tab-content .member-secton {
+    padding-bottom: 70px;
   }
   .workspacepage .contents .tab-content .member-secton .member-introduction {
     margin-bottom: 37px;

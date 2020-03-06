@@ -598,9 +598,41 @@
     }
 
     @media screen and (max-width:541px) {
+        padding-bottom: 80px;
+        .top_banner {
+            margin-left: 0;
+            margin-bottom: 14px;
+            height: auto;
+
+            .top_banner_spaceTitle {
+                left: 15px;
+                top: 30px;
+
+                h2 {
+                    font-size: 18px;
+                    line-height: 20px;
+                    -webkit-writing-mode: horizontal-tb;
+                    -ms-writing-mode: lr-tb;
+                    writing-mode: horizontal-tb;
+                    text-align: left;
+
+                    &::before {
+                        font-size: 12px;
+                        -webkit-writing-mode: horizontal-tb;
+                        -ms-writing-mode: lr-tb;
+                        writing-mode: horizontal-tb;
+                        -webkit-transform: inherit;
+                        transform: inherit;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
         .contents {
             padding-left: 15px;
             padding-right: 15px;
+            padding-top: 0;
 
             .tab-content {
                 padding-top: 15px;
@@ -663,6 +695,8 @@
                 }
 
                 .member-secton {
+                    padding-bottom: 70px;
+
                     .member-introduction {
                         margin-bottom: 37px;
                     }
