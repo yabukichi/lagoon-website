@@ -599,6 +599,7 @@
 
     @media screen and (max-width:541px) {
         padding-bottom: 80px;
+
         .top_banner {
             margin-left: 0;
             margin-bottom: 14px;
@@ -615,6 +616,7 @@
                     -ms-writing-mode: lr-tb;
                     writing-mode: horizontal-tb;
                     text-align: left;
+                    font-weight: bold;
 
                     &::before {
                         font-size: 12px;
@@ -671,6 +673,7 @@
                                 margin-bottom: 30px;
                                 font-weight: bold;
                                 writing-mode: horizontal-tb;
+                                font-weight: bold;
 
                                 &::before {
                                     font-size: 12px;
@@ -710,6 +713,7 @@
                             line-height: 20px;
                             writing-mode: horizontal-tb;
                             text-align: center;
+                            font-weight: bold;
 
                             &::before {
                                 font-size: 12px;
@@ -760,6 +764,7 @@
                             line-height: 20px;
                             writing-mode: horizontal-tb;
                             text-align: center;
+                            font-weight: bold;
 
                             &::before {
                                 font-size: 12px;

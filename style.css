@@ -3047,6 +3047,7 @@ section {
     -ms-writing-mode: lr-tb;
     writing-mode: horizontal-tb;
     text-align: left;
+    font-weight: bold;
   }
   .workspacepage .top_banner .top_banner_spaceTitle h2::before {
     font-size: 12px;
@@ -3093,6 +3094,7 @@ section {
     -webkit-writing-mode: horizontal-tb;
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
+    font-weight: bold;
   }
   .workspacepage .contents .tab-content .tab-pane .equipment-section .top_banner_spaceTitle h2::before {
     font-size: 12px;
@@ -3127,6 +3129,7 @@ section {
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
     text-align: center;
+    font-weight: bold;
   }
   .workspacepage .contents .tab-content .member-secton .top_banner_spaceTitle h2::before {
     font-size: 12px;
@@ -3175,6 +3178,7 @@ section {
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
     text-align: center;
+    font-weight: bold;
   }
   .workspacepage .contents .tab-content .compare-section .top_banner_spaceTitle h2::before {
     font-size: 12px;
