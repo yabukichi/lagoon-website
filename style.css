@@ -2876,6 +2876,9 @@ section {
   .workspacepage .top_banner .top_banner_img_pc {
     display: none;
   }
+  .workspacepage .top_banner .top_banner_img_tb {
+    display: block;
+  }
   .workspacepage .contents {
     max-width: 690px;
   }
