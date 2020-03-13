@@ -18,8 +18,127 @@
             <section class="top_banner">
                 <!-- タスク12 -->
             </section>
-            <!-- ここから下にタスク13 -->
-            <section class="contents"> <!-- 適宜追加 -->
+            <section class="contents tab-content" id="myTabContent">
+                <!-- tab -->
+                <div class="tab">
+                    <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">創業支援</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">ICT人材育成</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="kozamaker-tab" data-toggle="tab" href="#kozamaker" role="tab" aria-controls="kozamaker" aria-selected="false">Koza Maker</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 創業支援 -->
+                <div class="tab-pane active support-wrap" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="about">
+                        <p>
+                            「起業したいけど、いろいろ不安で一歩が踏みだせない・・・」創業支援コンシェルジュによる個別相談を無料で行っています。スタートアップ・フリーランス・スモールビジネス・社会起業家・社内起業家など様々な属性に合わせたセミナー・ワークショップを実施します。
+                        </p>
+                    </div>
+                    <a class="link-btn">予約申し込み<img class="link-img" src="images/btn-more-normal.png" alt="ボタンの画像"></a>
+                    <div class="cards-wrap">
+                        <div class="card">
+                            <img src="images/test01_serviseimg.png" class="card-img-top" alt="serviseのイメージ画像">
+                            <div class="card-body">
+                                <h5 class="card-title">スタートアップ</h5>
+                                <p class="card-text">起業したい人がどうやって起業すればいいか分からない。起業内容は決まっているが、資金調達・開業に必要なあれこれが分からない。</p>
+                                <p class="card-text">そんなあなたの起業に伴奏できるのがLagoonです。</p>
+                                <p class="card-text">多種多様なスキルをもったコンシェルジュや、経営の専門店が、あなたの起業をサポートします。</p>
+                                <a href="#" class="link-btn card-link">詳細はこちら<img class="link-img" src="images/btn-more-normal.png" alt="ボタンの画像"></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/test02_serciseimg.png" class="card-img-top" alt="serviseのイメージ画像">
+                            <div class="card-body">
+                                <h5 class="card-title">地域ビジネス</h5>
+                                <p class="card-text">地域における課題をビジネス的な手法で解決しようとする事業を地域ビジネスと呼びます。</p>
+                                <p class="card-text">沖縄市コザの商店街も、シャッター通りと呼ばれたが、ここ数年少しづつ活気を取り戻しつつある。そんな地域における資源を活用した地域ビジネスをLagoonでは応援します。</p>
+                                <a href="#" class="link-btn card-link">詳細はこちら<img class="link-img" src="images/btn-more-normal.png" alt="ボタンの画像"></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/test03_serviseimg.png" class="card-img-top" alt="serviseのイメージ画像">
+                            <div class="card-body">
+                                <h5 class="card-title">飲食ビジネス</h5>
+                                <p class="card-text">飲食店開業を考えた時に、多くの人は出店に必要なメニューを考えがち。</p>
+                                <p class="card-text">しかし、飲食店開業に必要な準備は他にも沢山あるのが現実です。</p>
+                                <p class="card-text"> 食材の原価計算、メニューや看板などのデザイン、集客力など。</p>
+                                <p class="card-text">Lagoonでは、多種多様なスキルをもったスタッフがそれぞれの特性を活かし、飲食店開業に向けて丁寧にサポートいたします。</p>
+                                <a href="#" class="link-btn card-link">詳細はこちら<img class="link-img" src="images/btn-more-normal.png" alt="ボタンの画像"></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/test04_serviceimg.png" class="card-img-top" alt="serviseのイメージ画像">
+                            <div class="card-body">
+                                <h5 class="card-title">ソーシャルビジネス</h5>
+                                <p class="card-text">社会課題に対してアプローチする事業をソーシャルビジネスと呼び、SDGsがまさしくのそのアプローチを推奨するものです。</p>
+                                <p class="card-text">沖縄でもその動きが強くなってきており、貧困、教育、自然、福祉など、沖縄の課題解決が世界の課題解決につながります。</p>
+                                <a href="#" class="link-btn card-link">詳細はこちら<img class="link-img" src="images/btn-more-normal.png" alt="ボタンの画像"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- スライダー -->
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <p class="backgroud-text">利用者の声</p>
+                            <div class="carousel-item active"> 
+                                <div class="slide-content">
+                                    <div class="about-user">
+                                        <img src="images/service_comment.png" alt="島袋豊さんの写真">
+                                        <p>島袋&emsp; 豊</p>
+                                    </div>
+                                    <div class="comment-text">
+                                        <h5>スポーツ居酒屋ドラキン</h5>
+                                        <p class="category">支援内容：ブランディング・店舗内装</p>
+                                        <p class="support-detail">Lagoonでデザインを担当するスタッフのアドバイスのもと、スポーツ居酒屋ドラキンのコンセプトを表す内装を決定し、ブランディングに注力した。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="slide-content">
+                                    <div class="about-user">
+                                        <img src="images/service_comment.png" alt="島袋豊さんの写真">
+                                        <p>島袋&emsp; 豊</p>
+                                    </div>
+                                    <div class="comment-text">
+                                        <h5>スポーツ居酒屋ドラキン</h5>
+                                        <p class="category">支援内容：ブランディング・店舗内装</p>
+                                        <p class="support-detail">Lagoonでデザインを担当するスタッフのアドバイスのもと、スポーツ居酒屋ドラキンのコンセプトを表す内装を決定し、ブランディングに注力した。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="slide-content">
+                                    <div class="about-user">
+                                        <img src="images/service_comment.png" alt="島袋豊さんの写真">
+                                        <p>島袋&emsp; 豊</p>
+                                    </div>
+                                    <div class="comment-text">
+                                        <h5>スポーツ居酒屋ドラキン</h5>
+                                        <p class="category">支援内容：ブランディング・店舗内装</p>
+                                        <p class="support-detail">Lagoonでデザインを担当するスタッフのアドバイスのもと、スポーツ居酒屋ドラキンのコンセプトを表す内装を決定し、ブランディングに注力した。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    アイウエオ
+                </div>
             </section>
             <!-- ここから上にタスク13 -->
         </div>

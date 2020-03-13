@@ -2460,6 +2460,150 @@ section {
   }
 }
 
+.servicepage .contents {
+  letter-spacing: 0.8px;
+  line-height: 22px;
+}
+
+.servicepage .contents .link-btn {
+  font-size: 16px;
+  border: solid 2px #2ca6e0;
+  color: #2ca6e0;
+  padding: 10px 37px 10px 25px;
+  border-radius: 22px;
+}
+
+.servicepage .contents .link-btn .link-img {
+  width: 29px;
+  height: auto;
+  margin-left: 30px;
+}
+
+.servicepage .contents .tav .nav-pills {
+  background-color: #ffffff;
+}
+
+.servicepage .contents .tav .nav-pills .nav-item .nav-link {
+  background-color: #ffffff;
+}
+
+.servicepage .contents .about {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  width: 770px;
+}
+
+.servicepage .contents .about p {
+  font-size: 14px;
+  color: #212426;
+}
+
+.servicepage .contents .cards-wrap {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.servicepage .contents .cards-wrap .card {
+  border: none;
+  width: 270px;
+  height: auto;
+  position: relative;
+}
+
+.servicepage .contents .cards-wrap .card .card-img-top {
+  width: 270px;
+  height: 171px;
+}
+
+.servicepage .contents .cards-wrap .card .card-body {
+  padding: 20px 0 100px 0;
+}
+
+.servicepage .contents .cards-wrap .card .card-body .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+.servicepage .contents .cards-wrap .card .card-body .card-text {
+  font-size: 14px;
+  text-indent: 1em;
+}
+
+.servicepage .contents .cards-wrap .card .card-body .card-link {
+  display: block;
+  margin-top: 60px;
+  position: absolute;
+  bottom: 0;
+}
+
+.servicepage .contents .carousel {
+  margin-top: 100px;
+  margin-bottom: 154px;
+}
+
+.servicepage .contents .carousel .carousel-inner {
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.servicepage .contents .carousel .carousel-inner .backgroud-text {
+  font-size: 100px;
+  font-weight: bold;
+  position: absolute;
+  color: #ffffff;
+  bottom: 46px;
+  right: 129px;
+}
+
+.servicepage .contents .carousel .carousel-inner .carousel-item .slide-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 60px 0;
+  margin: 0 auto;
+  width: 770px;
+  z-index: -1;
+}
+
+.servicepage .contents .carousel .carousel-inner .carousel-item .slide-content .about-user img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 40px;
+}
+
+.servicepage .contents .carousel .carousel-inner .carousel-item .slide-content .about-user p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #212426;
+}
+
+.servicepage .contents .carousel .carousel-inner .carousel-item .slide-content .comment-text {
+  padding-left: 68px;
+  width: 600px;
+}
+
+.servicepage .contents .carousel .carousel-inner .carousel-item .slide-content .comment-text h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.servicepage .contents .carousel .carousel-inner .carousel-item .slide-content .comment-text .category {
+  font-size: 14px;
+  color: #95959a;
+}
+
+.servicepage .contents .carousel .carousel-inner .carousel-item .slide-content .comment-text .support-detail {
+  color: #212426;
+  font-size: 14px;
+  padding-top: 67px;
+}
+
 #arrow_top {
   position: fixed;
   bottom: 348px;
