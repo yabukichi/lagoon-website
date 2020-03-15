@@ -1,31 +1,338 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>予約・問い合わせ | STARTUP LAB LAGOON</title>
     <!-- bootstrap4 -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <!-- タスク２ -->
+        <nav class="navbar navbar-expand-md">
+            <div class="nav-header">
+                <div class="header-tb-left">
+                    <a href="#"><img src="images/lagoon_logo.JPG" alt="lagoon_logo" class="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item news">
+                            <a class="nav-link" href="#">ニュース</a>
+                        </li>
+                        <li class="nav-item service">
+                            <a class="nav-link" href="#">施設サービス</a>
+                        </li>
+                        <li class="nav-item space">
+                            <a class="nav-link" href="#">コワーキングスペース</a>
+                        </li>
+                        <li class="nav-item access">
+                            <a class="nav-link" href="#">アクセス</a>
+                        </li>
+                        <li class="nav-item about">
+                            <a class="nav-link" href="#">lagoonとは</a>
+                        </li>
+                        <li class="nav-item event">
+                            <a class="nav-link" href="#">イベント</a>
+                        </li>
+                        <li class="nav-item contact">
+                            <a class="nav-link" href="#">予約問い合わせ</a>
+                        </li>
+                        <li class="nav-item search dropdown">
+                            <div class="hover-img dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="search hover-none" src="images/icon-search-normal.png" alt="icon-search-normal">
+                                <img class="search hover-block" src="images/icon-search-hover.png">
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="hr"></div>
+                                <input type="search" name="search" placeholder="キーワードを入力してください…">
+                                <div class="search-cancel hover-img">
+                                    <img class="hover-none" src="images/icon-cancel-normal.png" alt="icon-cancel-normal">
+                                    <img class="hover-block" src="images/icon-cancel-hover.png" alt="icon-cancel-normal">
+                                </div>
+                            </div>
+                        </li>
+                        <ul class="tb-sns none">
+                            <li class="tb-fb">
+                                <div class="hover-img">
+                                    <img class="hover-none" src="images/icon-fb-normal.png" alt="icon-fb-normal">
+                                    <img class="hover-block" src="images/icon-fb-hover.png" alt="icon-fb-normal">
+                                </div>
+                            </li>
+                            <li class="tb-ins">
+                                <div class="hover-img">
+                                    <img class="hover-none" src="images/icon-ins-normal.png" alt="footer-ins">
+                                    <img class="hover-block" src="images/icon-ins-normal.png" alt="footer-ins">
+                                </div>
+                            </li>
+                            <li class="tb-twitter ">
+                                <div class="hover-img">
+                                    <img class="hover-none" src="images/icon-twitter-normal.png" alt="icon-twitter-normal">
+                                    <img class="hover-block" src="images/icon-twitter-hover.png" alt="icon-twitter-normal">
+                                </div>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="header-tb-right">
+                    <ul class="tb header">
+                        <li class="tb-contact">
+                            <a href="#">予約問い合わせ</a>
+                        </li>
+                        <li class="tb-event">
+                            <a href="#">イベント</a>
+                        </li>
+                    </ul>
+                    <div class="search hover-img none dropdown dropdown-toggle"  type="button" id="dropdownMenuButtontb" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="hover-none" src="images/icon-search-normal.png" alt="icon-search-normal">
+                        <img class="hover-block" src="images/icon-search-hover.png" alt="icon-search-normal">
+                    </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButtontb">
+                            <div class="hr"></div>
+                            <input type="search" name="search" placeholder="キーワードを入力してください…">
+                            <div class="search-cancel hover-img">
+                                <img class="hover-none" src="images/icon-cancel-normal.png" alt="icon-cancel-normal">
+                                <img class="hover-block" src="images/icon-cancel-hover.png" alt="icon-cancel-normal">
+                            </div>
+                        </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="cancel hover-img">
+                            <img class="cancel none hover-none" src="images/icon-cancel-normal.png" alt="icon-cancel-norma">
+                            <img class="cancel hover-block" src="images/icon-cancel-hover.png" alt="icon-cancel-norma">
+                        </div>
+                        <img class="buger" src="images/icon-buger.png" alt="icon-buger">
+                    </button>
+                </div>
+            </div>
+        </nav>
     </header>
+
     <main>
         <div class="contactpage">
             <section class="top_banner">
-                <!-- タスク12 -->
+                <div class="container-fluid">
+                    <!-- タスク12 -->
+                    <div class="category-top">
+                        <div class="category-title">
+                            <h1>予約・<br class="sp-only">問い合わせ</h1>
+                        </div>
+                    </div>
+                </div>
             </section>
+
             <!-- ここから下にタスク16 -->
+            <div class="tab-menu">
+                <!-- ここにタブを記述 -->
+                <div class="container-fluid">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactForm" data-toggle="tab">問い合わせ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reservationForm" data-toggle="tab">予約</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#questions" data-toggle="tab">よくある質問</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tab-content">
+                <!-- お問い合せ -->
+                <section class="tab-pane" id="contactForm">
+                    <p>お問い合せ</p>
+                </section>
+                <!-- /お問い合せ -->
+            
+                <!-- 予約 -->
+                <section class="tab-pane" id="reservationForm">
+                    <p>予約</p>
+                </section>
+                <!-- /予約 -->
+            
+                <!-- よくある質問 -->
+                <section class="tab-pane" id="questions">
+                    <div class="container">
+                        <div class="faq" id="faq">
+                            <h2>施設について</h2>
+                            <div class="faq__question">
+                                <h3 class="faq__heading">利用は無料ですか？</h3>
+                                <p class="faq__answer">
+                                    ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキス
+                                </p>
+                            </div>
+                            <div class="faq__question">
+                                <h3 class="faq__heading">駐車場はありますか？</h3>
+                                <p class="faq__answer">
+                                    ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキス
+                                </p>
+                            </div>
+                            <div class="faq__question">
+                                <h3 class="faq__heading">近くのバス停はどこですか？</h3>
+                                <p class="faq__answer">
+                                    ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキス
+                                </p>
+                            </div>
+                            <div class="faq__question">
+                                <h3 class="faq__heading">館内は飲食物の持ち込みは可能ですか？</h3>
+                                <p class="faq__answer">
+                                    ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキス
+                                </p>
+                            </div>
+                            <div class="faq__question">
+                                <h3 class="faq__heading">パソコンのレンタルはありますか？</h3>
+                                <p class="faq__answer">
+                                    ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキス
+                                </p>
+                            </div>
+
+                            <h2>創業支援について</h2>
+                            <div class="faq__question">
+                                <h3 class="faq__heading">どのような創業支援がありますか？</h3>
+                                <p class="faq__answer">
+                                    ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキス
+                                </p>
+                            </div>
+
+                            <h2>コザメイカーズについて</h2>
+                            <div class="faq__question">
+                                <h3 class="faq__heading">利用は無料ですか？</h3>
+                                <p class="faq__answer">
+                                    ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキス
+                                </p>
+                            </div>
+                            <div class="faq__question">
+                                <h3 class="faq__heading">突然来館して利用することもできますか？（予約は必須ですか？）</h3>
+                                <p class="faq__answer">
+                                    ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキス
+                                </p>
+                            </div>
+                            <div class="faq__question">
+                                <h3 class="faq__heading">パソコンを持っていないのですが、データ作成の際に使用できるパソコンはありますか？</h3>
+                                <p class="faq__answer">
+                                    ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキス
+                                </p>
+                            </div>
+                            <div class="faq__question">
+                                <h3 class="faq__heading">データの作成はしたことがないのですが、サポートはしてもらえますか？</h3>
+                                <p class="faq__answer">
+                                    ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキス
+                                </p>
+                            </div>
+                            <div class="faq__question">
+                                <h3 class="faq__heading">機械の操作が不安です。教えてもらえますか？</h3>
+                                <p class="faq__answer">
+                                    ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキス
+                                </p>
+                            </div>
+                            <div class="faq__question">
+                                <h3 class="faq__heading">現在は募集を行っていますか？</h3>
+                                <p class="faq__answer">
+                                    ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキス
+                                </p>
+                            </div>
+                            <div class="faq__question">
+                                <h3 class="faq__heading">パソコンのレンタルはありますか？</h3>
+                                <p class="faq__answer">
+                                    ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキス
+                                </p>
+                            </div>
+                            <div class="faq__question">
+                                <h3 class="faq__heading">プログラミングスクールの時間以外は施設を利用できますか？</h3>
+                                <p class="faq__answer">
+                                    ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキス
+                                </p>
+                            </div>
+
+                            <h2>イベントについて</h2>
+                            <div class="faq__question">
+                                <h3 class="faq__heading">現在参加募集中のイベントはどちらから見れますか？</h3>
+                                <p class="faq__answer">
+                                    ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキス
+                                </p>
+                            </div>
+                            <div class="faq__question">
+                                <h3 class="faq__heading">ログインしないと参加申し込みはできませんか？</h3>
+                                <p class="faq__answer">
+                                    ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキス
+                                </p>
+                            </div>
+                            <div class="faq__question">
+                                <h3 class="faq__heading">飛び入り参加は可能ですか？</h3>
+                                <p class="faq__answer">
+                                    ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。
+                                    ダミーテキスダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキス
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <!-- /よくある質問 -->
+            
+            </div>
+        <!-- tab-content -->
+
+
             <!-- ここから上ににタスク16 -->
         </div>
+        <!-- contactpage -->
     </main>
+
+    <!-- トップへ -->
+    <div id="arrow_top">
+        <a href="#">
+            <img srcset="./images/btn-arrow-top@3x.png 3x" class="btn_arrow_top lazyloaded">
+        </a>
+    </div>
+
     <footer>
-        <!-- タスク１０ -->
+        <div class="footer-wrapper">
+            <div class="footer-left-wrapper">
+                <img class="footer-logo" src="images/lagoon-white.png" alt="lagoonlogo">
+                <div class="footer-info">
+                    <p>沖縄県沖縄市中央1丁目7-8</p>
+                    <p>050-3556-6900</p>
+                    <p>MON-SUN 13:00-21:00 [水曜日定休]</p>
+                    <p>info@lagoon-koza.org</p>
+                </div>
+            </div>
+            <div class="footer-right-wrapper">
+                <i class="fab fa-2x fa-facebook-square facebook"></i>
+                <i class="fab fa-2x fa-instagram instagram"></i>
+                <i class="fab fa-2x fa-twitter twitter"></i>
+            </div>
+        </div>
+        <div class="small">
+            <small>@ Copyright 2020.Startup Lab Lagoon - All Rights Reserved</small>
+        </div>
     </footer>
+
     <script src="./jquery/jquery-3.4.1.min.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        // faqアニメーション
+        $(function () {
+            $('h3.faq__heading').each(function () {
+                $(this).on('click', function () {
+                    $("+p.faq__answer", this).slideToggle();
+                    $(this).toggleClass('is-opened');
+                    return false;
+                });
+            });
+        });
+    </script>
+
+    <!-- datapicker -->
+    <link rel="stylesheet" href="https://fengyuanchen.github.io/datepicker/css/datepicker.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://fengyuanchen.github.io/datepicker/js/datepicker.js"></script>
+    <script src="https://fengyuanchen.github.io/datepicker/js/datepicker.ja-JP.js"></script>
 </body>
+
 </html>
