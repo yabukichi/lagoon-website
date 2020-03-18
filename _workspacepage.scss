@@ -1,3 +1,937 @@
 .workspacepage {
-    // タスク14
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    overflow: hidden;
+
+    .top_banner {
+        max-width: 1305px;
+        width: 100%;
+        height: 327px;
+        position: relative;
+        margin-left: 135px;
+
+        img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+
+        .top_banner_spaceTitle {
+            position: absolute;
+            left: 0px;
+            top: 35px;
+
+            h2 {
+                font-size: 30px;
+                line-height: 50px;
+                letter-spacing: 2.5px;
+                color: #212426;
+                writing-mode: vertical-rl;
+                display: flex;
+                flex-direction: column-reverse;
+
+                &::before {
+                    content: 'Co-Working Space';
+                    font-size: 14px;
+                    color: #2ca6e0;
+                    letter-spacing: .8px;
+                    transform: rotate(-180deg);
+                    writing-mode: vertical-rl;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+    .contents {
+        max-width: 1170px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 35px;
+        padding-left: 0;
+        padding-right: 0;
+
+        .nav-tabs {
+            border-bottom: none;
+
+            .nav-item {
+                border-left: 1px solid #95959a;
+
+                &:last-child {
+                    border-right: 1px solid #95959a;
+                }
+
+                .nav-link {
+                    font-size: 16px;
+                    padding: 3px 50px;
+                    border: none;
+                }
+            }
+        }
+
+        .tab-content {
+            padding-top: 66px;
+
+            .tab-pane {
+                .space-section {
+                    max-width: 100%;
+                    width: 100%;
+
+                    .space-introduction {
+                        max-width: 770px;
+                        width: 100%;
+                        line-height: 22px;
+                        text-align: justify;
+                        font-size: 14px;
+                        letter-spacing: .8px;
+                        color: #212426;
+                        margin-bottom: 80px;
+                    }
+
+                    .space-introduction-contents {
+                        .introduction-content {
+                            margin-bottom: 60px;
+
+                            img {
+                                margin-bottom: 25px;
+                                max-width: 100%;
+                                width: 100%;
+                                height: auto;
+                            }
+
+                            div {
+                                h3 {
+                                    margin-bottom: 15px;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    letter-spacing: 1.2px;
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                    letter-spacing: .8px;
+                                    line-height: 22px;
+                                    text-align: justify;
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .equipment-section {
+                    position: relative;
+                    max-width: 1200px;
+                    width: 100%;
+                    padding-top: 80px;
+
+                    .top_banner_spaceTitle {
+                        position: absolute;
+                        left: 0px;
+                        top: 35px;
+
+                        h2 {
+                            font-size: 30px;
+                            line-height: 50px;
+                            letter-spacing: 2.5px;
+                            color: #212426;
+                            writing-mode: vertical-rl;
+                            display: flex;
+                            flex-direction: column-reverse;
+
+                            &::before {
+                                content: 'Space';
+                                font-size: 14px;
+                                color: #2ca6e0;
+                                letter-spacing: .8px;
+                                transform: rotate(-180deg);
+                                writing-mode: vertical-rl;
+                                text-align: end;
+                                line-height: 20px;
+                            }
+                        }
+
+                    }
+
+                    .equipment-img {
+                        max-width: 970px;
+                        width: 100%;
+                        margin-left: auto;
+                        margin-bottom: 60px;
+
+                        img {
+                            max-width: 100%;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    .equipment-contents {
+                        max-width: 970px;
+                        width: 100%;
+                        margin-left: 200px;
+                        padding: 0;
+
+                        .equipment-content {
+                            margin-bottom: 30px;
+
+                            h3 {
+                                font-size: 16px;
+                                font-weight: bold;
+                                letter-spacing: 1px;
+                                color: #2ca6e0;
+                                margin-bottom: 6px;
+
+                                span {
+                                    font-size: 30px;
+                                    margin-right: 20px;
+                                }
+                            }
+
+                            p {
+                                font-size: 14px;
+                                line-height: 22px;
+                                letter-spacing: .8px;
+                                color: #95959a;
+                                text-align: justify;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .member-secton {
+                position: relative;
+                max-width: 1200px;
+                width: 100%;
+                padding-bottom: 113px;
+
+                .member-introduction {
+                    max-width: 770px;
+                    width: 100%;
+                    line-height: 22px;
+                    text-align: justify;
+                    font-size: 14px;
+                    letter-spacing: .8px;
+                    color: #212426;
+                    margin-bottom: 140px;
+                }
+
+                .top_banner_spaceTitle {
+                    position: absolute;
+                    left: 0px;
+                    top: 210px;
+
+                    h2 {
+                        font-size: 30px;
+                        line-height: 50px;
+                        letter-spacing: 2.5px;
+                        color: #212426;
+                        -webkit-writing-mode: vertical-rl;
+                        -ms-writing-mode: tb-rl;
+                        writing-mode: vertical-rl;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: reverse;
+                        -ms-flex-direction: column-reverse;
+                        flex-direction: column-reverse;
+
+                        &::before {
+                            content: 'Equipment & Services';
+                            font-size: 14px;
+                            color: #2ca6e0;
+                            letter-spacing: .8px;
+                            -webkit-transform: rotate(-180deg);
+                            transform: rotate(-180deg);
+                            -webkit-writing-mode: vertical-rl;
+                            -ms-writing-mode: tb-rl;
+                            writing-mode: vertical-rl;
+                            text-align: end;
+                            line-height: 20px;
+                        }
+                    }
+                }
+
+                .member-introduction-contents {
+                    max-width: 970px;
+                    width: 100%;
+                    justify-content: space-around;
+                    margin-left: auto;
+
+                    .member-introduction-content {
+                        max-width: 170px;
+                        width: 100%;
+
+                        img {
+                            max-width: 90px;
+                            width: 100%;
+                            height: auto;
+                            margin: 0 auto;
+                            display: block;
+                            margin-bottom: 40px;
+                        }
+
+                        h3 {
+                            font-size: 16px;
+                            font-weight: bold;
+                            color: #2ca6e0;
+                            text-align: center;
+                            margin-bottom: 20px;
+                        }
+
+                        ul {
+                            margin-left: 20px;
+                            line-height: 22px;
+                            font-size: 14px;
+                            letter-spacing: .8px;
+                        }
+
+                        p {
+                            color: #2ca6e0;
+                            margin-left: 20px;
+                            text-indent: -10px;
+                            line-height: 22px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            .compare-section {
+                .top_banner_spaceTitle {
+                    font-size: 30px;
+                    line-height: 50px;
+                    letter-spacing: 2.5px;
+                    color: #212426;
+                    -webkit-writing-mode: vertical-rl;
+                    -ms-writing-mode: tb-rl;
+                    writing-mode: vertical-rl;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: reverse;
+                    -ms-flex-direction: column-reverse;
+                    flex-direction: column-reverse;
+
+                    h2 {
+                        font-size: 30px;
+                        line-height: 50px;
+                        letter-spacing: 2.5px;
+                        color: #212426;
+                        -webkit-writing-mode: vertical-rl;
+                        -ms-writing-mode: tb-rl;
+                        writing-mode: vertical-rl;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: reverse;
+                        -ms-flex-direction: column-reverse;
+                        flex-direction: column-reverse;
+
+                        &::before {
+                            content: 'Compare';
+                            font-size: 14px;
+                            color: #2ca6e0;
+                            letter-spacing: .8px;
+                            -webkit-transform: rotate(-180deg);
+                            transform: rotate(-180deg);
+                            -webkit-writing-mode: vertical-rl;
+                            -ms-writing-mode: tb-rl;
+                            writing-mode: vertical-rl;
+                            text-align: end;
+                            line-height: 20px;
+                        }
+                    }
+                }
+
+                .table {
+                    margin-bottom: 40px;
+
+                    thead {
+                        tr {
+                            th {
+                                text-align: center;
+                                font-size: 18px;
+                                color: #2ca6e0;
+                                line-height: 1.44;
+                                letter-spacing: 1.2px;
+                                border-top: none;
+                                padding-top: 20px;
+                                padding-bottom: 20px;
+
+                                span {
+                                    font-size: 16px;
+                                    color: #95959a;
+                                    letter-spacing: 1px;
+                                }
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            &:last-child {
+                                border-bottom: 1px solid #dee2e6;
+                            }
+
+                            th {
+                                font-size: 14px;
+                                line-height: 22px;
+                                letter-spacing: .8px;
+                                color: #212426;
+                            }
+
+                            td {
+                                font-size: 30px;
+                                color: #2ca6e0;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: normal;
+                    line-height: 1.57;
+                    letter-spacing: .8px;
+                    color: #95959a;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:769px) {
+
+        .table-mobile {
+            display: none;
+        }
+
+        .top_banner_img_tb {
+            display: none;
+        }
+
+    }
+
+    @media screen and (min-width:541px) {
+        .top_banner_img_sp {
+            display: none;
+        }
+
+        .top_banner_img_tb {
+            display: none;
+        }
+
+    }
+
+    @media screen and (max-width:769px) {
+        padding-bottom: 60px;
+
+        .top_banner {
+            max-width: 729px;
+            width: 100%;
+            height: 249px;
+            margin-left: 39px;
+
+            .top_banner_img_pc {
+                display: none;
+            }
+
+            .top_banner_img_tb {
+                display: block;
+            }
+
+        }
+
+        .contents {
+            max-width: 690px;
+
+            .tab-content {
+                .tab-pane {
+                    .equipment-section {
+                        max-width: 570px;
+                        width: 100%;
+                        margin-left: 120px;
+
+                        .top_banner_spaceTitle {
+                            left: -120px;
+                        }
+
+                        .equipment-contents {
+                            margin: 0 auto;
+                        }
+                    }
+
+                }
+
+                .member-secton {
+                    .member-introduction-contents {
+                        max-width: 570px;
+                        width: 100%;
+                        margin-left: 120px;
+                        justify-content: start;
+
+                        .member-introduction-content {
+                            margin-right: 30px;
+                            margin-bottom: 40px;
+
+                            &:nth-child(3n) {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+
+                .compare-section {
+                    position: relative;
+
+                    .top_banner_spaceTitle {
+                        position: absolute;
+                        left: 0px;
+                        top: -66px;
+                    }
+
+                    .table-pc {
+                        display: none;
+                    }
+
+                    p {
+                        max-width: 570px;
+                        width: 100%;
+                        margin-left: auto;
+                    }
+
+                    .table-mobile {
+                        max-width: 570px;
+                        margin-left: auto;
+                        margin-bottom: 30px;
+
+                        .nav-tabs {
+                            max-width: 570px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+
+                            .nav-item {
+                                border: 1px solid #f4f4f5;
+                                // margin-right: 10px;
+                                background: #f4f4f5;
+                                max-width: 183px;
+                                width: 100%;
+                                min-width: 94px;
+                                border-radius: 2px;
+                                height: 84px;
+
+                                &:last-child {
+                                    border-right: none;
+                                    margin-right: 0;
+                                }
+
+                                a {
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    line-height: 26px;
+                                    letter-spacing: 1.2px;
+                                    color: #c7c7cb;
+                                    padding: 0;
+                                    align-items: center;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: baseline;
+                                    height: 82px;
+                                    justify-content: center;
+
+                                    span {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+
+                            .active {
+                                background: #2ca6e0;
+                                color: white !important;
+
+                                span {
+                                    color: white;
+                                }
+                            }
+                        }
+
+                        .tab-content {
+                            border: 1px solid #f4f4f5;
+                            box-sizing: border-box;
+                            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+                            padding-top: 0;
+
+                            .tab-pane {
+                                dl {
+                                    padding: 10px 0 0;
+                                    width: 100%;
+                                    margin: 0 auto;
+                                    padding-left: 10px;
+                                    padding-right: 10px;
+
+                                    dt {
+                                        font-size: 14px;
+                                        letter-spacing: .8px;
+                                        line-height: 24px;
+                                        border-bottom: 1px solid #f4f4f5;
+                                        padding-bottom: 10px;
+                                    }
+
+                                    .last-child {
+                                        border-bottom: none;
+                                    }
+
+                                    dd {
+                                        text-align: center;
+                                        font-size: 24px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        color: #2ca6e0;
+                                        border-bottom: 1px solid #f4f4f5;
+                                        padding-bottom: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width:541px) {
+        padding-bottom: 80px;
+
+        .top_banner {
+            margin-left: 0;
+            margin-bottom: 14px;
+            height: auto;
+
+            .top_banner_img_tb {
+                display: none;
+            }
+
+            .top_banner_spaceTitle {
+                left: 15px;
+                top: 30px;
+
+                h2 {
+                    font-size: 18px;
+                    line-height: 20px;
+                    -webkit-writing-mode: horizontal-tb;
+                    -ms-writing-mode: lr-tb;
+                    writing-mode: horizontal-tb;
+                    text-align: left;
+                    font-weight: bold;
+
+                    &::before {
+                        font-size: 12px;
+                        -webkit-writing-mode: horizontal-tb;
+                        -ms-writing-mode: lr-tb;
+                        writing-mode: horizontal-tb;
+                        -webkit-transform: inherit;
+                        transform: inherit;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .contents {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 0;
+
+            .tab-content {
+                padding-top: 15px;
+
+                .tab-pane {
+                    .space-section {
+                        .space-introduction {
+                            margin-bottom: 40px;
+                        }
+
+                        .space-introduction-contents {
+                            .introduction-content {
+                                margin-bottom: 40px;
+
+                                div {
+                                    h3 {
+                                        font-size: 16px;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .equipment-section {
+                        margin: 0;
+
+                        .top_banner_spaceTitle {
+                            position: static;
+
+                            h2 {
+                                font-size: 18px;
+                                line-height: normal;
+                                letter-spacing: 1.2px;
+                                align-items: center;
+                                margin-bottom: 30px;
+                                font-weight: bold;
+                                writing-mode: horizontal-tb;
+                                font-weight: bold;
+
+                                &::before {
+                                    font-size: 12px;
+                                    transform: inherit;
+                                    writing-mode: horizontal-tb;
+                                    text-align: center;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+
+                        .equipment-img {
+                            margin-bottom: 40px;
+                        }
+
+                        .equipment-contents {
+                            .equipment-content {
+                                margin-bottom: 18px;
+                            }
+                        }
+                    }
+                }
+
+                .member-secton {
+                    padding-bottom: 70px;
+
+                    .member-introduction {
+                        margin-bottom: 37px;
+                    }
+
+                    .top_banner_spaceTitle {
+                        position: static;
+                        margin-bottom: 40px;
+
+                        h2 {
+                            font-size: 18px;
+                            line-height: 20px;
+                            writing-mode: horizontal-tb;
+                            text-align: center;
+                            font-weight: bold;
+
+                            &::before {
+                                font-size: 12px;
+                                writing-mode: horizontal-tb;
+                                transform: inherit;
+                                text-align: center;
+                            }
+                        }
+                    }
+
+                    .member-introduction-contents {
+                        margin-left: 0;
+                        flex-direction: column;
+
+                        .member-introduction-content {
+                            margin-right: 0;
+                            margin-bottom: 20px;
+                            display: flex;
+                            max-width: 100%;
+                            width: 100%;
+
+                            img {
+                                max-width: 70px;
+                                width: 100%;
+                                height: 70px;
+                                margin: 0 30px 40px 0;
+                            }
+
+                            div {
+                                h3 {
+                                    margin-bottom: 9px;
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                .compare-section {
+                    .top_banner_spaceTitle {
+                        position: static;
+                        margin: 0 auto;
+                        margin-bottom: 40px;
+
+                        h2 {
+                            font-size: 18px;
+                            line-height: 20px;
+                            writing-mode: horizontal-tb;
+                            text-align: center;
+                            font-weight: bold;
+
+                            &::before {
+                                font-size: 12px;
+                                writing-mode: horizontal-tb;
+                                transform: inherit;
+                                text-align: center;
+                            }
+                        }
+                    }
+
+                    .table-mobile {
+                        .nav-tabs {
+                            .nav-item {
+                                // margin-right: 4px;
+                                max-width: 94px;
+
+                                a {
+                                    font-size: 14px;
+                                    text-align: center;
+
+                                    span {
+                                        font-size: 12px;
+                                    }
+                                }
+
+                                .nav-link3 {
+                                    line-height: 53px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .nav-tabs {
+                .nav-item {
+                    .nav-link {
+                        font-size: 14px;
+                        padding: 3px 25px;
+                    }
+                }
+            }
+
+            .tab-content {
+                .tab-pane {
+                    dl {
+                        dt {
+                            padding-left: 0px;
+                            padding-right: 0px;
+                            padding-bottom: 15px;
+                            border-bottom: 1px solid #f4f4f5;
+
+                        }
+                    }
+
+                    dd {
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        border-bottom: 1px solid;
+                        padding-bottom: 15px;
+                        border-bottom: 1px solid #f4f4f5;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:426px) {
+        .contents {
+            .tab-content {
+                .compare-section {
+                    .table-mobile {
+                        .nav-tabs {
+                            .nav-item {
+                                max-width: 128px;
+
+                                .table-mobile-1 {
+                                    line-height: 50px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media screen and (max-width:376px) {
+        .contents {
+            .tab-content {
+                .compare-section {
+                    .table-mobile {
+                        .nav-tabs {
+                            .nav-item {
+                                max-width: 110px;
+
+                                .table-mobile-1 {
+                                    line-height: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:321px) {
+        .contents {
+            .tab-content {
+                .compare-section {
+                    .table-mobile {
+                        .nav-tabs {
+                            .nav-item {
+                                max-width: 94px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+.top_banner {
+    height: auto;
+
+    // .top_banner_img_tb {
+    //     display: none;
+    // }
+
+    .top_banner_spaceTitle {
+        left: -25px;
+        top: 15%;
+
+        h2 {
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 1.2px;
+            writing-mode: horizontal-tb;
+            font-weight: bold;
+
+            &::before {
+                font-size: 12px;
+                writing-mode: horizontal-tb;
+                line-height: 20px;
+                transform: inherit;
+            }
+        }
+    }
 }

@@ -1,34 +1,564 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <!-- bootstrap4 -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <!-- タスク２ -->
-    </header>
-    <main>
-        <div class="workspacepage">
-            <section class="top_banner">
-                <!-- タスク12 -->
-            </section>
-            <!-- ここから下にタスク14 -->
-            <section class="contents"><!-- 適宜追加 -->
 
-            </section>
-            <!-- ここから上にタスク14 -->
-        </div>
-    </main>
-    <footer>
-        <!-- タスク10 -->
-    </footer>
-    <script src="./jquery/jquery-3.4.1.min.js"></script>
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <!-- bootstrap4 -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- タスク２ -->
+        </header>
+        <main>
+            <div class="workspacepage">
+                <section class="top_banner">
+                    <img src="images/pic-space-desktop.png" class="top_banner_img_pc" alt="">
+                    <img src="images/pic-space-tablet.png" class="top_banner_img_tb" alt="">
+                    <img src="images/pic-space-mobile.png" class="top_banner_img_sp" alt="">
+                    <!-- <img src="images/pic-space-desktop.png" class="top_banner_img_sp" alt=""> -->
+                    <div class="top_banner_spaceTitle">
+                        <h2>施設概要</h2>
+                    </div>
+                </section>
+                <!-- ここから下にタスク14 -->
+                <section class="contents container-fluid">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item"><a class="nav-link active" href="#space" data-toggle="tab">施設紹介</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#member" data-toggle="tab">月額会員</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="space" class="tab-pane active">
+                            <section class="space-section">
+                                <p class="space-introduction">
+                                    Lagoonの施設は、創業して間もないフリーランスやベンシャー企業様々なスタートアップに併走するために
+                                    快適に作業に集中できる無料コワーキングスペースと、有料会員専用オフィス、その他、イベントスペースとしても活用されております。<br>
+                                    KOZA makersは3Dプリンタ、レーザーカッター、ガーメントプリンタなどのデジタルなものづくりを支援出来る機器をご用意しております。
+                                </p>
+                                <div class="space-introduction-contents row">
+                                    <div class="introduction-content col-md-6 col-12">
+                                        <img src="images/570x230.png" class="" alt="">
+                                        <div>
+                                            <h3>1F | 無料コワーキングスペース</h3>
+                                            <p>
+                                                リモートワーク、カフェ利用、打ち合わせ、勉強等、様々な用途で活用可能な無料のコワーキングスペースです。
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="introduction-content col-md-6 col-12">
+                                        <img src="images/570x230.png" class="" alt="">
+                                        <div>
+                                            <h3>イベント</h3>
+                                            <p>
+                                                ICT人材育成、ものづくり、生き方、様々なイベントをLagoonでは開催しています。<br>
+                                                ご興味のあるイベントは、お気軽にご参加ください。 </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="introduction-content col-md-6 col-12">
+                                        <img src="images/570x230.png" class="" alt="">
+                                        <div>
+                                            <h3>KOZA MAKERS （デジタルなものづくり）</h3>
+                                            <p>
+                                                レーザーカッター、３Dプリンタが揃った最新鋭のものづくり施設。
+                                                機材の使い方や、データの作成の仕方をサポートします。
+                                                データの作り方さえ知ってしまえば、なにを作るかはあなた次第。
+                                                koza makersであなたのイメージを形にしてみませんか？
+                                                定期的に機材の使い方や、データ作成のための講座を開催していますので、お気軽にご参加ください。
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="introduction-content col-md-6 col-12">
+                                        <img src="images/570x230.png" class="" alt="">
+                                        <div>
+                                            <h3>読書・カフェスペース</h3>
+                                            <p>
+                                                Lagoon内の本棚にある本は、ICT人材育成から、創業にまつわるものまで沢山の種類の本をご用意しております。
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                            <section class="equipment-section">
+                                <div class="top_banner_spaceTitle">
+                                    <h2>施設の備品</h2>
+                                </div>
+
+                                <div class="equipment-img">
+                                    <img src="images/970x430.png" alt="">
+                                </div>
+                                <div class="equipment-contents container-fluid">
+                                    <div class="row">
+                                        <div class="equipment-content col-lg-6 col-12">
+                                            <h3><span>1</span>コワーキングスペース</h3>
+                                            <p>
+                                                打ち合わせやPCでの作業が出来る無料スペースで、電源やWi-Fi環境も整っています。
+                                            </p>
+                                        </div>
+                                        <div class="equipment-content col-lg-6 col-12">
+                                            <h3><span>2</span>シェアオフィス</h3>
+                                            <p>
+                                                Lagoon2階スペースは、
+                                                月額有料会員のシェアオフィスになっており、
+                                                ドリンクやモニター利用などの会員限定特典があります。
+                                            </p>
+                                        </div>
+                                        <div class="equipment-content col-lg-6 col-12">
+                                            <h3><span>3</span>カフェスペース</h3>
+                                            <p>
+                                                打ち合わせや作業スペースを完備しているコワーキングスペースでは、
+                                                ドリンクの注文が可能です。
+                                            </p>
+                                        </div>
+                                        <div class="equipment-content col-lg-6 col-12">
+                                            <h3><span>4</span>クリエイタースペース</h3>
+                                            <p>
+                                                3Dプリンタや、レーザーカッター、ガーメントプリンタ
+                                                （洋服にプリントが出来る機械）を完備しています。
+                                            </p>
+                                        </div>
+                                        <div class="equipment-content col-lg-6 col-12">
+                                            <h3><span>5</span>イベントスペース</h3>
+                                            <p>
+                                                ICT人材育成や、創業、モノづくりに関する講座やセミナーを開催しております。
+                                            </p>
+                                        </div>
+                                        <div class="equipment-content col-lg-6 col-12">
+                                            <h3><span>6</span>ギャラリースペース</h3>
+                                            <p>
+                                                KOZAmakersで制作した作品を展示しています。
+                                            </p>
+                                        </div>
+                                        <div class="equipment-content col-lg-6 col-12">
+                                            <h3><span>7</span>プログラミングスクール</h3>
+                                            <p>
+                                                ICT人材育成や、創業、モノづくりに関する講座やセミナーを開催しております。
+                                            </p>
+                                        </div>
+                                        <div class="equipment-content col-lg-6 col-12">
+                                            <h3><span>8</span>読書スペース</h3>
+                                            <p>
+                                                創業、開業に関する書物から、プログラミングなどの技術書があり、どなたでも自由に読める本を多数ご用意しています。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+
+
+
+
+                        <div id="member" class="tab-pane">
+                            <section class="member-secton">
+                                <p class="member-introduction">
+                                    Lagoonの施設は、創業して間もないフリーランスやベンシャー企業様々なスタートアップに併走するために
+                                    快適に作業に集中できる無料コワーキングスペースと、有料会員専用オフィス、その他、イベントスペースとしても活用されております。<br>
+                                    KOZA makersは3Dプリンタ、レーザーカッター、ガーメントプリンタなどのデジタルなものづくりを支援出来る機器をご用意しております。
+                                </p>
+                                <div class="top_banner_spaceTitle">
+                                    <h2>施設サービス</h2>
+                                </div>
+                                <div class="member-introduction-contents flex-wrap row">
+                                    <div class="member-introduction-content">
+                                        <img src="images/img-moniter.png" alt="">
+                                        <div>
+                                            <h3>快適な環境</h3>
+                                            <ul>
+                                                <li>会員専用Wi-fi完備</li>
+                                                <li>ミーティングルーム完備</li>
+                                                <li>セルフドリンクバー完備</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-introduction-content">
+                                        <img src="images/img-printer.png" alt="">
+                                        <div>
+                                            <h3>充実の設備</h3>
+                                            <ul>
+                                                <li>ホワイトボードの利用可</li>
+                                                <li>コピー機の利用可</li>
+                                                <li>大型モニターの利用可</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-introduction-content">
+                                        <img src="images/img-support.png" alt="">
+                                        <div>
+                                            <h3>サポート</h3>
+                                            <ul>
+                                                <li>事務所契約の家賃に比べてコストが抑えられる！</li>
+                                                <li>初期費用が不要！</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-introduction-content">
+                                        <img src="images/img-money.png" alt="">
+                                        <div>
+                                            <h3>低コスト</h3>
+                                            <ul>
+                                                <li>事務所契約の家賃に比べてコストが抑えられる！</li>
+                                                <li>初期費用が不要！</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-introduction-content">
+                                        <img src="images/img-services.png" alt="">
+                                        <div>
+                                            <h3>気楽に相談</h3>
+                                            <ul>
+                                                <li>専門スタッフと相談できる</li>
+                                            </ul>
+                                            <p>【法人登記を追加料金にてご登録できます】</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+
+
+                            <section class="compare-section">
+                                <div class="top_banner_spaceTitle">
+                                    <h2>有料サービス内容</h2>
+                                </div>
+
+                                <table class="table table-pc">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">1日ドロップイン<br><span>一日500円</span></th>
+                                            <th scope="col">フリーアドレス会員<br><span>月額5,000円</span></th>
+                                            <th scope="col">ブース会員<br><span>月額30,000円</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1階 | 無料コワーキングスペース</th>
+                                            <td>●</td>
+                                            <td>●</td>
+                                            <td>●</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">読書・カフェスペース</th>
+                                            <td>●</td>
+                                            <td>●</td>
+                                            <td>●</td>
+                                        </tr>
+                                        <tr scope="row">
+                                            <th scope="row">コンセント</th>
+                                            <td>●</td>
+                                            <td>●</td>
+                                            <td>●</td>
+                                        </tr>
+                                        <tr scope="row">
+                                            <th scope="row">2階 | フリーアドレス</th>
+                                            <td></td>
+                                            <td>●</td>
+                                            <td>●</td>
+                                        </tr>
+                                        <tr scope="row">
+                                            <th scope="row">会員専用WiFi</th>
+                                            <td></td>
+                                            <td>●</td>
+                                            <td>●</td>
+                                        </tr>
+                                        <tr scope="row">
+                                            <th scope="row">ミーティングルーム</th>
+                                            <td></td>
+                                            <td>●</td>
+                                            <td>●</td>
+                                        </tr>
+                                        <tr scope="row">
+                                            <th scope="row">セルフドリンクバー</th>
+                                            <td></td>
+                                            <td>●</td>
+                                            <td>●</td>
+                                        </tr>
+                                        <tr scope="row">
+                                            <th scope="row">白板</th>
+                                            <td></td>
+                                            <td>●</td>
+                                            <td>●</td>
+                                        </tr>
+                                        <tr scope="row">
+                                            <th scope="row">ホワイトボード</th>
+                                            <td></td>
+                                            <td>●</td>
+                                            <td>●</td>
+                                        </tr>
+                                        <tr scope="row">
+                                            <th scope="row">コピー機</th>
+                                            <td></td>
+                                            <td>●</td>
+                                            <td>●</td>
+                                        </tr>
+                                        <tr scope="row">
+                                            <th scope="row">会員専用コミュニティ</th>
+                                            <td></td>
+                                            <td>●</td>
+                                            <td>●</td>
+                                        </tr>
+                                        <tr scope="row">
+                                            <th scope="row">運営相談</th>
+                                            <td></td>
+                                            <td>●</td>
+                                            <td>●</td>
+                                        </tr>
+                                        <tr scope="row">
+                                            <th scope="row">法人登記</th>
+                                            <td></td>
+                                            <td></td>
+                                            <td>●</td>
+                                        </tr>
+                                        <tr scope="row">
+                                            <th scope="row">プライベートロッカー</th>
+                                            <td></td>
+                                            <td></td>
+                                            <td>●</td>
+                                        </tr>
+                                        <tr scope="row">
+                                            <th scope="row">ブース</th>
+                                            <td></td>
+                                            <td></td>
+                                            <td>●</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <div class="table-mobile">
+                                    <ul class="nav nav-tabs">
+                                        <li class="nav-item">
+                                            <a href="#table-mobile-1" class="table-mobile-1 nav-link active" data-toggle="tab">
+                                                1日ドロップイン<br><span>500円 / 日</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#table-mobile-2" class="nav-link" data-toggle="tab">
+                                                フリーアドレス会員<br><span>5,000円 / 月</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#table-mobile-3" class="nav-link nav-link3" data-toggle="tab">
+                                                ブース会員<br><span>30,000円 / 月</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                        <div id="table-mobile-1" class="tab-pane active">
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">1階 | 無料コワーキングスペース</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">読書・カフェスペース</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">コンセント</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">2階 | フリーアドレス</dt>
+                                                <dd class="col-md-5 col-2"></dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">会員専用WiFi</dt>
+                                                <dd class="col-md-5 col-2"></dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">ミーティングルーム</dt>
+                                                <dd class="col-md-5 col-2"></dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">セルフドリンクバー</dt>
+                                                <dd class="col-md-5 col-2"></dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">白板</dt>
+                                                <dd class="col-md-5 col-2"></dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">ホワイトボード</dt>
+                                                <dd class="col-md-5 col-2"></dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">コピー機</dt>
+                                                <dd class="col-md-5 col-2"></dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">会員専用コミュニティ</dt>
+                                                <dd class="col-md-5 col-2"></dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">運営相談</dt>
+                                                <dd class="col-md-5 col-2"></dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">法人登記</dt>
+                                                <dd class="col-md-5 col-2"></dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">プライベートロッカー</dt>
+                                                <dd class="col-md-5 col-2"></dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10 last-child">ブース</dt>
+                                                <dd class="col-md-5 col-2 last-child"></dd>
+                                            </dl>
+                                        </div>
+                                        <div id="table-mobile-2" class="tab-pane">
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">1階 | 無料コワーキングスペース</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">読書・カフェスペース</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">コンセント</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">2階 | フリーアドレス</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">会員専用WiFi</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">ミーティングルーム</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">セルフドリンクバー</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">白板</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">ホワイトボード</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">コピー機</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">会員専用コミュニティ</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">運営相談</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">法人登記</dt>
+                                                <dd class="col-md-5 col-2"></dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">プライベートロッカー</dt>
+                                                <dd class="col-md-5 col-2"></dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10 last-child">ブース</dt>
+                                                <dd class="col-md-5 col-2 last-child"></dd>
+                                            </dl>
+                                        </div>
+                                        <div id="table-mobile-3" class="tab-pane">
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">1階 | 無料コワーキングスペース</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">読書・カフェスペース</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">コンセント</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">2階 | フリーアドレス</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">会員専用WiFi</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">ミーティングルーム</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">セルフドリンクバー</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">白板</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">ホワイトボード</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">コピー機</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">会員専用コミュニティ</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">運営相談</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">法人登記</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10">プライベートロッカー</dt>
+                                                <dd class="col-md-5 col-2">●</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt class="col-md-7 col-10 last-child">ブース</dt>
+                                                <dd class="col-md-5 col-2 last-child">●</dd>
+                                            </dl>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <p>
+                                    沖縄市の委託事業のため相場より割安価格で設定しております。<br>
+                                    今後変更される可能性もありますので予めご了承ください。
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <!-- ここから上にタスク14 -->
+            </div>
+        </main>
+        <footer>
+            <!-- タスク10 -->
+        </footer>
+        <script src="./jquery/jquery-3.4.1.min.js"></script>
+        <script src="./bootstrap/js/bootstrap.min.js"></script>
+    </body>
+
 </html>
