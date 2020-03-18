@@ -1,3 +1,231 @@
+
 .contactpage{
     // タスク16
+    max-width:1160px;
+    margin: 0 auto;
+    .sp-only{
+        display:none;
+    }
+    .pc-only{
+        display: block;
+    }
+    section{
+        .container{
+            max-width: 970px;
+        }
+    }
+    .top_banner{
+        // max-width: 1350px;
+        // margin: 0 0 0 auto;
+        background: url(./images/pic-contact-desktop.png);
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position: center right;
+        height: 327px;
+        position: relative;
+        margin-bottom: 30px;
+        .category-top{
+            .category-title{
+                -ms-writing-mode: tb-rl;
+                -webkit-writing-mode: vertical-lr;
+                writing-mode: vertical-lr;
+                position: absolute;
+                // z-index: 1;
+                margin: 0;
+                // margin-left: 15px;
+                &::before{
+                    content: "contact";
+                    display: inline-block;
+                    color: #2ca6e0;
+                    transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                    -moz-transform: rotate(180deg);
+                    -webkit-transform: rotate(180deg);
+                    -o-transform: rotate(180deg);
+                    margin-right: 12px;
+                    display: none;
+                }
+                &::after{
+                    content: "contact";
+                    display: inline-block;
+                    color: #2ca6e0;
+                    margin-right: 12px;
+                }
+
+                h1{
+                    color: #212426;
+                    font-size: 30px;
+                    height: auto;
+                    letter-spacing: 2.5px;
+                    line-height: 1.2;
+                    @include md{
+                        .sp-only{
+                            display: block;
+                        }
+                    }
+                }
+                .category-top-hero {
+                    text-align: right;
+                    img {
+                        width: 100%;
+                        vertical-align: bottom;
+                    }
+                }
+            }
+        }
+    }
+    .tab-menu{
+        // margin-bottom: 60px;
+        .nav-tabs{
+            border-bottom: none;
+            font-size:16px;
+            height: 24px;
+            .nav-link{
+                color: #95959a;
+                padding:0 24px;
+                border-left: 1px solid #dee2e6;
+                border-right: 1px solid #dee2e6;
+                border-top: none;
+                border-bottom: none;
+            }
+            .nav-link.active{
+                color: #71c9f3;
+                border-color: none;
+            }
+        }
+    }
+    #questions{
+        margin-bottom: 100px;
+        .faq{
+            h2{
+                padding:60px 0 40px 0;
+                font-size:18px;
+                letter-spacing: 1.2px;
+                color:#2ca6e0;
+                border-bottom: 1px solid #f4f4f5;
+                font-weight: bold;
+            }
+            .faq__question{
+                border-bottom:1px solid #f4f4f5;
+                .faq__heading{
+                    position: relative;
+                    height: 60px;
+                    padding-right: 20px;
+                    padding-left: 20px;
+                    display: flex;
+                    align-items: center;
+                    font-family: 'Noto Sans JP', sans-serif;
+                    cursor: pointer;
+                    &::after{
+                    content: '+';
+                    position: absolute;
+                    right: -10px;
+                    top: 30px;
+                    width: 30px;
+                    height: 30px;
+                    padding: 0 0 3px 0;
+                    color: #71c9f3;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    font-size: 26px;
+                    }
+                }
+                .faq__heading.is-opened::after {
+                    content: '-';
+                    color: #fff;
+                }
+                .faq__heading.is-opened {
+                    background-color: #71c9f3;
+                    color: #fff;
+                    -webkit-transition: all 0.2s ease-in-out;
+                    transition: all 0.2s ease-in-out;
+                }
+                .faq__answer{
+                    padding:18px 20px;
+                    height: auto;
+                    line-height: 1.6;
+                    letter-spacing: 0.8px;
+                    font-size: 14px;
+                    // display: -webkit-box;
+                    // display: -ms-flexbox;
+                    // display: flex;
+                    display: none;
+                    // max-height: 0;
+                    // overflow: hidden;
+                    // -webkit-transition: all 0.2s ease-in-out;
+                    // transition: all 0.2s ease-in-out;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    #arrow_top {
+        bottom: 100px;
+    }
+
+    @include md{
+        .top_banner{
+            height: 249px;
+            background-position: top;
+        }
+        #questions .faq h2{
+            padding-left: 24px;
+        }
+    }
+    @include sm{
+        .top_banner{
+            background-image: url(./images/pic-contact-mobile.png);
+            height: 110px;
+            .category-top .category-title h1{
+                font-size: 18px;
+                .sp-only{
+                display: none;
+                }
+            }
+            .category-top .category-title::before{
+                display: none;
+            }
+            .category-top .category-title::after{
+                display: inline-block;
+                padding-top: 5px;
+            }
+        }
+        .tab-menu .nav-tabs .nav-link {
+            padding: 0 10px;
+            font-size: 14px;
+        }
+        #questions .faq .faq__question .faq__heading {
+            min-height: 38px;
+            height: auto;
+            padding: 8px 30px 8px 10px;
+            line-height: 1.2;
+            font-size: 14px;
+        }
+        #questions .faq .faq__question .faq__answer {
+            padding: 15px 10px;
+        }
+        .top_banner .category-top .category-title {
+            -ms-writing-mode: horizontal-tb;
+            writing-mode:horizontal-tb;
+        }
+        #questions .faq h2{
+            padding: 14px 0 20px 0;
+            font-size: 16px;
+        }
+        #questions .faq .faq__question .faq__heading::after{
+            top: 20px;
+            right: 10px;
+            width: 10px;
+            height: 10px;
+        }
+    }
 }
