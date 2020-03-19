@@ -1,3 +1,56 @@
+.news_banner{
+
+}
 .allnews{
-    // タスク１１
+    .one-post{
+        display: flex;
+        border-top: 1px solid #f4f4f5;
+        border-bottom: 1px solid #f4f4f5;
+        padding: 18px;
+        a{
+            color: #212426;
+        }
+        a:hover{
+            color: #2ca6e0;
+            text-decoration: none;
+        }
+        p{
+            font-family: Ubuntu;
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.57;
+            letter-spacing: 0.8px;
+        }
+        .post-category {
+            margin: 0 20px;
+            font-family: NotoSansTC;
+            font-size: 12px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.8px;
+            text-align: center;
+            border-radius: 30.5px;
+            background-color: #2ca6e0;
+            a{
+                color: #ffffff;
+                padding: 1px 15px;
+            }
+        }
+        .post-infomation {
+            display: flex;
+        }
+    }
+    @include md{
+        padding: 0 39px;
+        .one-post {
+            flex-direction: column-reverse;
+        }
+        .post-infomation {
+            padding: 10px 0 0 0;
+        }
+    }
 }
