@@ -2846,6 +2846,10 @@ section {
   font-size: 14px;
 }
 
+.workspacepage .contents .tab-content .compare-section {
+  position: relative;
+}
+
 .workspacepage .contents .tab-content .compare-section .top_banner_spaceTitle {
   font-size: 30px;
   line-height: 50px;
@@ -2861,6 +2865,9 @@ section {
   -webkit-box-direction: reverse;
   -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .workspacepage .contents .tab-content .compare-section .top_banner_spaceTitle h2 {
@@ -2896,6 +2903,9 @@ section {
 
 .workspacepage .contents .tab-content .compare-section .table {
   margin-bottom: 40px;
+  max-width: 970px;
+  width: 100%;
+  margin-left: auto;
 }
 
 .workspacepage .contents .tab-content .compare-section .table thead tr th {
