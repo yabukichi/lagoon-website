@@ -2460,6 +2460,74 @@ section {
   }
 }
 
+.allnews .one-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #f4f4f5;
+  border-bottom: 1px solid #f4f4f5;
+  padding: 18px;
+}
+
+.allnews .one-post a {
+  color: #212426;
+}
+
+.allnews .one-post a:hover {
+  color: #2ca6e0;
+  text-decoration: none;
+}
+
+.allnews .one-post p {
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: 0.8px;
+}
+
+.allnews .one-post .post-category {
+  margin: 0 20px;
+  font-family: NotoSansTC;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-align: center;
+  border-radius: 30.5px;
+  background-color: #2ca6e0;
+}
+
+.allnews .one-post .post-category a {
+  color: #ffffff;
+  padding: 1px 15px;
+}
+
+.allnews .one-post .post-infomation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767.98px) {
+  .allnews {
+    padding: 0 39px;
+  }
+  .allnews .one-post {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .allnews .post-infomation {
+    padding: 10px 0 0 0;
+  }
+}
+
 .workspacepage {
   max-width: 1440px;
   margin: 0 auto;
@@ -2778,6 +2846,10 @@ section {
   font-size: 14px;
 }
 
+.workspacepage .contents .tab-content .compare-section {
+  position: relative;
+}
+
 .workspacepage .contents .tab-content .compare-section .top_banner_spaceTitle {
   font-size: 30px;
   line-height: 50px;
@@ -2793,6 +2865,9 @@ section {
   -webkit-box-direction: reverse;
   -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .workspacepage .contents .tab-content .compare-section .top_banner_spaceTitle h2 {
@@ -2828,6 +2903,9 @@ section {
 
 .workspacepage .contents .tab-content .compare-section .table {
   margin-bottom: 40px;
+  max-width: 970px;
+  width: 100%;
+  margin-left: auto;
 }
 
 .workspacepage .contents .tab-content .compare-section .table thead tr th {
