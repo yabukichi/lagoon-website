@@ -1,8 +1,59 @@
 .servicepage{
     .contents{
+        box-sizing: border-box;
+        padding: 0 15px;
         letter-spacing: 0.8px;
         line-height: 22px;
-        .tab-pane{
+        .tab{
+            .nav-tabs{
+                border: unset;
+                .nav-item{
+                    position: relative;
+                    width: 170px;
+                    text-align: center;
+                    .nav-link{
+                        border: none;
+                        padding: 0;
+                    }
+                    .active{
+                        background-color: unset;
+                    }
+                }
+            }
+        }
+        .nav-item::before{
+            content: '    ';
+            display: block;
+            width: 1px;
+            height: 30px;
+            background-color: #c7c7cb;
+            // margin-right: 40px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .nav-item:last-child::after{
+            content: '';
+            display: block;
+            width: 1px;
+            height: 30px;
+            background-color: #c7c7cb;
+            margin-left: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .support-wrap{
+            .about{
+                padding-top: 60px;
+                padding-bottom: 30px;
+                width: 70%;
+                p{
+                    font-size: 14px;
+                    color: #212426;
+                }
+            }
+            
             .link-btn{
                 font-size: 16px;
                 border: solid 2px #2ca6e0;
@@ -15,27 +66,16 @@
                     margin-left: 30px;
                 }
             }
-            .about{
-                padding-top: 60px;
-                padding-bottom: 30px;
-                width: 770px;
-                p{
-                    font-size: 14px;
-                    color: #212426;
-                }
-            }
+            
             .cards-wrap{
-                padding-top: 100px;
-                display: flex;
-                justify-content: space-between;
                 .card{
+                    margin-top: 100px;
                     border: none;
-                    width: 270px;
                     height: auto;
                     position: relative;
                     .card-img-top{
-                        width: 270px;
-                        height: 171px;
+                        max-width: 100%;
+                        height: auto;
                     }
                     .card-body{
                         padding: 20px 0 100px 0;
@@ -57,7 +97,9 @@
                     }
                 }
             }
+            
             .carousel{
+                margin: 0 calc(50% - 50vw);
                 margin-top: 100px;
                 margin-bottom: 154px;
                 .carousel-inner{
@@ -67,34 +109,36 @@
                         font-size: 100px;
                         font-weight: bold;
                         position: absolute;
-                        color: rgb(255, 255, 255, 0.5);
                         bottom: 46px;
                         right: 129px;
-                        z-index: -5;
+                        z-index: 1;
+                        color: #ffffff;
                     }
+                    
                     .carousel-item{
+                        z-index: 10;
                         .slide-content{
-                            display: flex;
                             padding: 60px 0;
                             margin: 0 auto;
-                            width: 770px;
-                            z-index: -1;
-                            .about-user{
-                                img{
-                                    width: 100px;
-                                    height: 100px;
-                                    margin-bottom: 40px;
-                                }
-                                p{
-                                    font-size: 16px;
-                                    font-weight: bold;
-                                    color: #212426;
-                                }
+                            width: 80%;
+                            display: grid;
+                            grid-template-rows: 1fr 80px;
+                            grid-template-columns: 30% 70%;
+                            grid-template-areas: 
+                            "area1 area2"
+                            "area3 area4";
+                            .user-img{
+                                grid-area: area1;
                             }
-                            .comment-text{
-                                padding-left: 68px;
-                                width: 600px;
-                                h5{
+                            .user-name{
+                                grid-area: area3;
+                                padding-top: 40px;
+                                font-size: 16px;
+                                font-weight: bold;
+                            }
+                            .about-user{
+                                grid-area: area2;
+                                .belong{
                                     font-size: 18px;
                                     font-weight: bold;
                                 }
@@ -102,10 +146,78 @@
                                     font-size: 14px;
                                     color: #95959a;
                                 }
+                            }
+                            .support-detail{
+                                grid-area: area4;
+                                font-size: 14px;
+                                padding-top: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .container-fluid{
+            padding: 0;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:767.98px){
+    
+    .servicepage{
+        .tab{
+            .nav-tabs{
+                .nav-item{
+                    width: 25%;
+                }
+            }
+        }
+        .contents{
+            padding: 0 5%;
+            .support-wrap{
+                .about{
+                    width: 100%;
+                    padding-bottom: 0;
+                    margin-bottom: 30px;
+                }
+                .cards-wrap{
+                    padding-top: 60px;
+                    .card{
+                        margin-bottom: 60px;
+                    }
+                }
+                .carousel{
+                    margin-top: 20px;
+                    margin-bottom: 110px;
+                    .carousel-inner{
+                        .backgroud-text{
+                            font-size: 80px;
+                            right: 23px;
+                        }
+                        .carousel-item{
+                            z-index: 10;
+                            .slide-content{
+                                grid-template-rows: 1fr 1fr 80px;
+                                grid-template-columns: 30% 70%;
+                                grid-template-areas: 
+                                "area1 area2"
+                                "area1 area3"
+                                "area4 area4";
+                                .user-img{
+                                    grid-area: area1;
+                                }
+                                .about-user{
+                                    grid-area: area3;
+                                }
+                                .user-name{
+                                    grid-area: area2;
+                                    padding: 0;
+                                }
                                 .support-detail{
-                                    color: #212426;
-                                    font-size: 14px;
-                                    padding-top: 67px;
+                                    grid-area: area4;
                                 }
                             }
                         }
@@ -116,16 +228,80 @@
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width: 575.98px){
     .servicepage{
-        background-color: red;
         .contents{
+            .tab{
+                width: 100vw;
+                font-size: 14px;
+                .nav-tabs{
+                    .nav-item{
+                        width: 30%;
+                        .nav-link{
+                            display: inline;
+                        }
+                    }
+                }
+            }
             .support-wrap{
+                .link-btn{
+                    font-size: 12px;
+                }
                 .cards-wrap{
-                    flex-wrap: wrap;
+                    .card{
+                        margin-top: 40px;
+                        margin-bottom: 0;
+                        .card-body{
+                            .card-title{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                .carousel{
+                    margin-top: 80px;
+                    margin-bottom: 80px;
+                    .carousel-inner{
+                        .backgroud-text{
+                            font-size: 60px;
+                            margin: 0 auto;
+                            width: 80%;
+                        }
+                        .carousel-item{
+                            .slide-content{
+                                display: block;
+                                margin: 0 auto;
+                                text-align: center;
+                                .user-img{
+                                    width: 80%;
+                                    margin: 0 auto;
+                                }
+                                .user-name{
+                                    width: 80%;
+                                    margin: 0 auto;
+                                }
+                                .about-user{
+                                    width: 80%;
+                                    margin: 0 auto;
+                                    .belong{
+                                        font-size: 16px;
+                                    }
+                                }
+                                .support-detail{
+                                    width: 100%;
+                                    margin: 0 auto;
+                                    text-align: justify;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
     }
-
+}
+.btn-secondary{
+    border-color: #e8e8e8;
+    background-color: #ffffff;
+    color: #3f4144;
 }
