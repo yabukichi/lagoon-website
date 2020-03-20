@@ -2460,6 +2460,56 @@ section {
   }
 }
 
+.servicepage .top_banner {
+  max-width: 1305px;
+  width: 100%;
+  height: 327px;
+  position: relative;
+  margin-left: 135px;
+}
+
+.servicepage .top_banner img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.servicepage .top_banner .top_banner_spaceTitle {
+  position: absolute;
+  left: 0px;
+  top: 35px;
+}
+
+.servicepage .top_banner .top_banner_spaceTitle h2 {
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 2.5px;
+  color: #212426;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.servicepage .top_banner .top_banner_spaceTitle h2::before {
+  content: 'Co-Working Space';
+  font-size: 14px;
+  color: #2ca6e0;
+  letter-spacing: .8px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  line-height: 20px;
+}
+
 .servicepage .contents {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
