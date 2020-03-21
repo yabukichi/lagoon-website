@@ -2,6 +2,13 @@
 
 }
 .allnews{
+    .nav-tabs{
+        margin-bottom: 76px;
+        border-bottom: none;
+        .nav-link{
+            border: none;
+        }
+    }
     .one-post{
         display: flex;
         border-top: 1px solid #f4f4f5;
