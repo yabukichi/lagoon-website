@@ -15,3 +15,22 @@ $(function(){
         return false;
     });
 });
+
+
+// フッター手前で止める
+$(window).on("scroll", function() {
+    scrollHeight = $(document).height();
+    scrollPosition = $(window).height() + $(window).scrollTop();
+    footerHeight = $(".footer-wrapper").innerHeight();
+    if ( scrollHeight - scrollPosition  <= footerHeight ) {
+      $("#arrow_top").css({
+        "bottom": footerHeight,
+        "transition": "all 0.5s ease-in",
+      });
+    } else {
+      $("#arrow_top").css({
+        "position":"fixed",
+        "bottom": "10%",
+      });
+    }
+  });
