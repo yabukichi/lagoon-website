@@ -1,63 +1,112 @@
 .news_banner{
-
-}
-.allnews{
-    .nav-tabs{
-        margin-bottom: 76px;
-        border-bottom: none;
-        .nav-link{
-            border: none;
-        }
+    .top_banner_img_pc{
+        max-width: 1305px;
+        margin: 0 calc(50% - 50vw);
+        margin: right;
     }
-    .one-post{
-        display: flex;
-        border-top: 1px solid #f4f4f5;
-        border-bottom: 1px solid #f4f4f5;
-        padding: 18px;
-        a{
-            color: #212426;
-        }
-        a:hover{
-            color: #2ca6e0;
-            text-decoration: none;
-        }
-        p{
-            font-family: Ubuntu;
-            font-size: 14px;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.57;
-            letter-spacing: 0.8px;
-        }
-        .post-category {
-            margin: 0 20px;
-            font-family: NotoSansTC;
-            font-size: 12px;
-            font-weight: 500;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: 0.8px;
-            text-align: center;
-            border-radius: 30.5px;
-            background-color: #2ca6e0;
-            a{
-                color: #ffffff;
-                padding: 1px 15px;
+    .top_banner_img_tb{
+        display: none;
+    }
+    .top_banner_img_sp{
+        display: none;
+    }
+    }
+    .allnews{
+        .nav-tabs{
+            margin-bottom: 76px;
+            border-bottom: none;
+            .nav-item{
+                position: relative;
+                width: 10%;
+                text-align: center;
+                .nav-link{
+                    border: none;
+                }
             }
         }
-        .post-infomation {
+        .nav-item::before{
+            content: '    ';
+            display: block;
+            width: 1px;
+            height: 30px;
+            background-color: #c7c7cb;
+            // margin-right: 40px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .nav-item:last-child::after{
+            content: '';
+            display: block;
+            width: 1px;
+            height: 30px;
+            background-color: #c7c7cb;
+            margin-left: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .date{
+            font-size: 30px;
+            color: #f4f4f5;
+            font-weight: bold;
+            text-align: right;
+            padding-bottom: 20px;
+        }
+        .one-post{
             display: flex;
+            border-top: 1px solid #f4f4f5;
+            border-bottom: 1px solid #f4f4f5;
+            padding: 18px;
+            a{
+                color: #212426;
+            }
+            a:hover{
+                color: #2ca6e0;
+                text-decoration: none;
+            }
+            p{
+                font-family: Ubuntu;
+                font-size: 14px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.57;
+                letter-spacing: 0.8px;
+            }
+            .post-category {
+                margin: 0 20px;
+                font-family: NotoSansTC;
+                font-size: 12px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: 0.8px;
+                text-align: center;
+                border-radius: 30.5px;
+                background-color: #2ca6e0;
+                a{
+                    color: #ffffff;
+                    padding: 1px 15px;
+                }
+            }
+            .post-infomation {
+                display: flex;
+            }
+            .more{
+                width: 33px;
+                height: 9px;
+                margin: 6px 0 0 auto;
+            }
+        }
+        @include md{
+            padding: 0 39px;
+            .one-post {
+                flex-direction: column-reverse;
+            }
+            .post-infomation {
+                padding: 10px 0 0 0;
+            }
         }
     }
-    @include md{
-        padding: 0 39px;
-        .one-post {
-            flex-direction: column-reverse;
-        }
-        .post-infomation {
-            padding: 10px 0 0 0;
-        }
-    }
-}
