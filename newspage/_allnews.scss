@@ -1,19 +1,53 @@
-.news_banner{
-    .top_banner_img_pc{
+.newspage{
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    .news_banner{
         max-width: 1305px;
-        margin: 0 calc(50% - 50vw);
-        margin: right;
-    }
-    .top_banner_img_tb{
-        display: none;
-    }
-    .top_banner_img_sp{
-        display: none;
-    }
+        width: 100%;
+        height: 327px;
+        position: relative;
+        margin-left: 135px;
+        img{
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+        .top_banner_img_tb{
+            display: none;
+        }
+        .top_banner_img_sp{
+            display: none;
+        }
+        .title{
+            position: absolute;
+            left: 5%;
+            top: 35px;
+            h2 {
+                font-size: 30px;
+                line-height: 50px;
+                letter-spacing: 2.5px;
+                color: #212426;
+                writing-mode: vertical-rl;
+                display: flex;
+                flex-direction: column-reverse;
+                &::before {
+                    content: 'Services';
+                    font-size: 14px;
+                    text-align: right;
+                    color: #2ca6e0;
+                    letter-spacing: .8px;
+                    transform: rotate(-180deg);
+                    writing-mode: vertical-rl;
+                    line-height: 20px;
+                }
+            }
+        }
     }
     .allnews{
         .nav-tabs{
             margin-bottom: 76px;
+            margin-top: 58px;
             border-bottom: none;
             .nav-item{
                 position: relative;
@@ -21,6 +55,7 @@
                 text-align: center;
                 .nav-link{
                     border: none;
+                    padding: 0;
                 }
             }
         }
@@ -110,3 +145,59 @@
             }
         }
     }
+}
+
+@media screen and (max-width:769px){
+    .newspage{
+        padding: 0 10px;
+        .news_banner{
+            margin-left: 5%;
+            max-height: 229px;
+            height: auto;
+            .top_banner_img_pc{
+                display: none;
+            }
+            .top_banner_img_tb{
+                display: block;
+            }
+            .title{
+                top:20px;
+                left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:541px){
+    .newspage{
+        .news_banner{
+            margin-bottom: 60px;
+            .top_banner_img_tb{
+                display: none;
+            }
+            .top_banner_img_sp{
+                display: block;
+                // height: 229px;
+            }
+            .title{
+                top: 0px;
+            }
+        }
+        .allnews{
+            .nav-tabs{
+                .nav-item{
+                    width: 20%;
+                }
+            }
+            .top-content{
+                .tab-pane{
+                    .one-post{
+                        .more{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
