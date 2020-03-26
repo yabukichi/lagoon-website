@@ -2525,6 +2525,10 @@ section {
   line-height: 20px;
 }
 
+.newspage .allnews {
+  padding-bottom: 110px;
+}
+
 .newspage .allnews .nav-tabs {
   margin-bottom: 76px;
   margin-top: 58px;
@@ -2649,6 +2653,36 @@ section {
   }
 }
 
+.newspage .allnews .pagination {
+  margin: 0 auto;
+  max-width: 321px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Ubuntu';
+  margin-top: 82px;
+  margin-bottom: 116px;
+}
+
+.newspage .allnews .pagination .page-item .page-link {
+  border: none;
+  color: #c7c7cb;
+  background-color: transparent;
+}
+
+.newspage .allnews .pagination .active {
+  border-radius: 50%;
+  border: 2px  #2ca6e0 solid;
+}
+
+.newspage .allnews .pagination .active a {
+  color: #2ca6e0 !important;
+}
+
 @media screen and (max-width: 769px) {
   .newspage {
     padding: 0 10px;
@@ -2683,10 +2717,16 @@ section {
   .newspage .news_banner .title {
     top: 0px;
   }
+  .newspage .allnews {
+    padding: 0 10px;
+  }
   .newspage .allnews .nav-tabs .nav-item {
     width: 20%;
   }
-  .newspage .allnews .top-content .tab-pane .one-post .more {
+  .newspage .allnews .one-post .post-infomation .post-date {
+    font-size: 12px;
+  }
+  .newspage .allnews .one-post .more {
     display: none;
   }
 }
